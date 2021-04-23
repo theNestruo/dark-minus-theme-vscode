@@ -2,8 +2,9 @@
 	"publisher": "theNestruo",
 	"name": "dark-minus-theme",
 	"displayName": "Dark-",
+	"icon": "doc/images/icon.128.png",
 	"description": "Simplified versions of the default Dark (Visual Studio) theme, with less syntax highlight",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"engines": {
 		"vscode": "^1.54.0"
 	},
