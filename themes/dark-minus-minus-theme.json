@@ -1,0 +1,77 @@
+{
+	"name": "Dark--",
+	"type": "dark",
+	"semanticHighlighting": false,
+	"colors": {
+		/*
+		 * Clones "Dark (Visual Studio)" base colors and styles
+		 */
+		"activityBarBadge.background": "#007acc",
+		"editor.foreground": "#d4d4d4",
+		"editor.inactiveSelectionBackground": "#3a3d41",
+		"editor.selectionHighlightBackground": "#add6ff26",
+		"editorIndentGuide.activeBackground": "#707070",
+		"editorIndentGuide.background": "#404040",
+		"input.placeholderForeground": "#a6a6a6",
+		"list.dropBackground": "#383b3d",
+		"menu.background": "#252526",
+		"menu.foreground": "#cccccc",
+		"sideBarSectionHeader.background": "#00000000",
+		"sideBarSectionHeader.border": "#cccccc33",
+		"sideBarTitle.foreground": "#bbbbbb",
+		"statusBarItem.remoteBackground": "#16825d",
+		"statusBarItem.remoteForeground": "#ffffff",
+		"tab.lastPinnedBorder": "#cccccc33",
+		/*
+		 * Dimmed whitespace, ruler and line numbers
+		 */
+		"editorWhitespace.foreground": "#e3e4e214", // default is "#e3e4e229"
+		"editorRuler.foreground": "#5a5a5a7f", // default is "#5a5a5a"
+		"editorLineNumber.foreground": "#8585857f", // default is "#858585"
+		"editorLineNumber.activeForeground": "#c6c6c67f" // default is "#c6c6c6"
+	},
+	"tokenColors": [
+
+		/*
+		 * Basic modifiers:
+		 */
+		{
+			"scope": [ "emphasis", "markup.italic" ],
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [ "strong", "markup.bold", "markup.heading" ],
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": [ "markup.underline" ],
+			"settings": {
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"scope": [ "invalid" ],
+			"settings": {
+				"foreground": "#F44747"
+			}
+		},
+
+		/*
+		 * Colors:
+		 */
+		{
+			"name": "Comments",
+			"scope": [
+				"comment", "punctuation.definition.comment"
+			],
+			"settings": {
+				"foreground": "#d4d4d460",
+				"fontStyle": "italic"
+			}
+		}
+	]
+}
