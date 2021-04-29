@@ -76,7 +76,7 @@
 			"scope": [
 				"keyword",
 				"keyword.operator.new",
-				// C/C++/TypeScript:
+				// C/C++/Java/TypeScript:
 				"storage.modifier",
 				"storage.type",
 				"support.type",
@@ -84,7 +84,6 @@
 				"entity.name.tag", "punctuation.definition.tag",
 				// Java:
 				"keyword.operator.instanceof", // instanceof
-				"punctuation.definition.annotation", // @
 				// Markdown:
 				"punctuation.definition.heading.markdown", // #, ##, ###
 				"punctuation.definition.list.begin.markdown", // *, -
@@ -113,9 +112,12 @@
 				// Fixes operators (not keywords):
 				"keyword.operator",
 				"storage.type.function.arrow",
-				// Fixes Java (package and imported classes as keywords)
+				"storage.modifier.array.bracket",
+				// Fixes Java (package name, imports, class names and annotations as keywords):
 				"storage.modifier.import",
 				"storage.modifier.package",
+				"storage.type.java",
+				"storage.type.annotation.java",
 				// Fixes JSON (prevents wall of strings):
 				"support.type.property-name", "punctuation.support.type.property-name",
 				// Fixes YAML (prevents wall of keywords):
