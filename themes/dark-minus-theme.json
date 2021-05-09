@@ -1,18 +1,32 @@
 {
 	"name": "Dark-",
 	"type": "dark",
-	"semanticHighlighting": false,
 	"colors": {
-		// Base text color
-		"editor.foreground": "#D3D4D2",
-		// Clones "Dark (Visual Studio)" sideBar style
+		// Clones "Dark (Visual Studio) / Dark+ (default dark)" styles
+		"activityBarBadge.background": "#007acc",
+		"editor.background": "#1e1e1e",
+		"editor.foreground": "#d3d4d2", // default is "#d4d4d4"
+		"editor.inactiveSelectionBackground": "#3a3d41",
+		"editor.selectionHighlightBackground": "#add6ff26",
+		"input.placeholderForeground": "#a6a6a6",
+		"list.dropBackground": "#383b3d",
+		"menu.background": "#252526",
+		"menu.foreground": "#cccccc",
+		"ports.iconRunningProcessForeground": "#369432",
 		"sideBarSectionHeader.background": "#00000000",
 		"sideBarSectionHeader.border": "#cccccc33",
-		// Dimmed whitespace, ruler and line numbers
-		"editorWhitespace.foreground": "#D3D4D230", // default is "#e3e4e229"
-		"editorRuler.foreground": "#D3D4D230", // default is "#5a5a5a"
-		"editorLineNumber.foreground": "#D3D4D230", // default is "#858585"
-		"editorLineNumber.activeForeground": "#D3D4D260" // default is "#c6c6c6"
+		"sideBarTitle.foreground": "#bbbbbb",
+		"statusBarItem.remoteBackground": "#16825d",
+		"statusBarItem.remoteForeground": "#ffffff",
+		"tab.lastPinnedBorder": "#cccccc33",
+
+		// Dimmed indent guides, line numbers, rulers and whitespace
+		"editorIndentGuide.activeBackground": "#d3d4d260", // Dark (Visual Studio) is "#707070",
+		"editorIndentGuide.background": "#404040", // Dark (Visual Studio) is "#404040",
+		"editorLineNumber.activeForeground": "#d3d4d260", // default is "#c6c6c6"
+		"editorLineNumber.foreground": "#d3d4d230", // default is "#858585"
+		"editorRuler.foreground": "#d3d4d230", // default is "#5a5a5a"
+		"editorWhitespace.foreground": "#d3d4d230" // default is "#e3e4e229"
 	},
 	"tokenColors": [
 
@@ -124,7 +138,7 @@
 				"entity.name.tag.yaml"
 			],
 			"settings": {
-				"foreground": "#D3D4D2"
+				"foreground": "#d3d4d2"
 			}
 		}
 	]

@@ -1,4 +1,9 @@
 
+## 0.4.0 (unreleased)
+
+- Restores the _Dark (Visual Studio)_ UI style
+- Fixes missing indent guides styles
+
 ## 0.3.0
 
 - Cleaner base colors and styles (i.e.: assumes the default Visual Studio dark values instead of _Dark (Visual Studio)_ values)
