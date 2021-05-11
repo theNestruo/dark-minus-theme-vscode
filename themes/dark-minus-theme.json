@@ -131,7 +131,7 @@
 				"storage.modifier.import",
 				"storage.modifier.package",
 				"storage.type.java",
-				"storage.type.annotation.java",
+				"storage.type.annotation.java", "punctuation.definition.annotation.java", "punctuation.definition.annotation-arguments",
 				// Fixes JSON (prevents wall of strings):
 				"support.type.property-name", "punctuation.support.type.property-name",
 				// Fixes YAML (prevents wall of keywords):
@@ -139,6 +139,16 @@
 			],
 			"settings": {
 				"foreground": "#d3d4d2"
+			}
+		},
+		{
+			"name": "Additional italics",
+			"scope": [
+				// Java annotations:
+				"storage.type.annotation.java", "punctuation.definition.annotation.java", "punctuation.definition.annotation-arguments"
+			],
+			"settings": {
+				"fontStyle": "italic"
 			}
 		}
 	]
