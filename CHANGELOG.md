@@ -3,6 +3,7 @@
 
 - Restores the _Dark (Visual Studio)_ UI style
 - Fixes missing indent guides styles
+- Fixes  highlighting in: SQL
 
 ## 0.3.0
 
