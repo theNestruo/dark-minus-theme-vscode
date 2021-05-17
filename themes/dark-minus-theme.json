@@ -102,7 +102,9 @@
 				"punctuation.definition.heading.markdown", // #, ##, ###
 				"punctuation.definition.list.begin.markdown", // *, -
 				// Makefile:
-				"variable.language" // ($<, $@)
+				"variable.language", // ($<, $@)
+				// SQL:
+				"support.function.aggregate.sql"
 			],
 			"settings": {
 				"foreground": "#569CD6"
