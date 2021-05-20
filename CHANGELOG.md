@@ -1,9 +1,9 @@
 
-## 0.4.0 (unreleased)
+## 0.4.0
 
 - Restores the _Dark (Visual Studio)_ UI style
 - Fixes missing indent guides styles
-- Fixes  highlighting in: SQL
+- Fixes highlighting in: Java, SQL
 
 ## 0.3.0
 
