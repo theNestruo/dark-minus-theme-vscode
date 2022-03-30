@@ -4,7 +4,7 @@
 	"displayName": "Dark-",
 	"icon": "doc/images/icon.128.png",
 	"description": "Simplified versions of the default Dark (Visual Studio) theme, with less syntax highlight",
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"engines": {
 		"vscode": "^1.54.0"
 	},

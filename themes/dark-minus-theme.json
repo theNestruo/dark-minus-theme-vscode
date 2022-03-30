@@ -122,6 +122,21 @@
 				"foreground": "#CE9178"
 			}
 		},
+
+		{
+			"name": "Java annotations & generics",
+			"scope": [
+				// Java annotations:
+				"storage.type.annotation.java", "punctuation.definition.annotation.java", "punctuation.definition.annotation-arguments",
+				// Java generics:
+				"storage.type.generic.java", "punctuation.bracket.angle.java"
+			],
+			"settings": {
+				"foreground": "#a3a4a2", // 50% between comment and default
+				"fontStyle": "italic" // Additional italics
+			}
+		},
+
 		{
 			"name": "Restore defaults",
 			"scope": [
@@ -129,11 +144,12 @@
 				"keyword.operator",
 				"storage.type.function.arrow",
 				"storage.modifier.array.bracket",
-				// Fixes Java (package name, imports, class names and annotations as keywords):
+				// Fixes Java (package name, imports and class names as keywords):
 				"storage.modifier.import",
 				"storage.modifier.package",
 				"storage.type.java",
-				"storage.type.annotation.java", "punctuation.definition.annotation.java", "punctuation.definition.annotation-arguments",
+				"storage.type.primitive.java",
+				"storage.type.object.array.java",
 				// Fixes JSON (prevents wall of strings):
 				"support.type.property-name", "punctuation.support.type.property-name",
 				// Fixes YAML (prevents wall of keywords):
@@ -141,16 +157,6 @@
 			],
 			"settings": {
 				"foreground": "#d3d4d2"
-			}
-		},
-		{
-			"name": "Additional italics",
-			"scope": [
-				// Java annotations:
-				"storage.type.annotation.java", "punctuation.definition.annotation.java", "punctuation.definition.annotation-arguments"
-			],
-			"settings": {
-				"fontStyle": "italic"
 			}
 		}
 	]

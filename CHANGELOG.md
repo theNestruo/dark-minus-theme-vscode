@@ -1,4 +1,8 @@
 
+## 0.5.0
+
+- Additional highlighting in: Java
+
 ## 0.4.0
 
 - Restores the _Dark (Visual Studio)_ UI style
