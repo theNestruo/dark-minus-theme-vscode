@@ -64,7 +64,6 @@
 				// Batch:
 				"keyword.command.rem",
 				// Java:
-				"keyword.other.documentation.javadoc",
 				"comment.block.javadoc"
 			],
 			"settings": {
@@ -124,12 +123,14 @@
 		},
 
 		{
-			"name": "Java annotations & generics",
+			"name": "Java annotations, generics, and javadoc",
 			"scope": [
 				// Java annotations:
 				"storage.type.annotation.java", "punctuation.definition.annotation.java", "punctuation.definition.annotation-arguments",
 				// Java generics:
-				"storage.type.generic.java", "punctuation.bracket.angle.java"
+				"storage.type.generic.java", "punctuation.bracket.angle.java",
+				// Javadoc:
+				"keyword.other.documentation.javadoc.java"
 			],
 			"settings": {
 				"foreground": "#a3a4a2", // 50% between comment and default

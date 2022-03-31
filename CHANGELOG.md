@@ -1,4 +1,8 @@
 
+## 0.6.0
+
+- Additional highlighting in: Javadoc
+
 ## 0.5.0
 
 - Additional highlighting in: Java
