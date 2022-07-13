@@ -1,4 +1,9 @@
 
+## 0.7.0
+
+- Additional highlighting in: Markdown
+- Workbench color customizations in `README.md`
+
 ## 0.6.0
 
 - Additional highlighting in: Javadoc
