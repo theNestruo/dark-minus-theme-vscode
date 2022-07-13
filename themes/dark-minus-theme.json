@@ -100,6 +100,10 @@
 				// Markdown:
 				"punctuation.definition.heading.markdown", // #, ##, ###
 				"punctuation.definition.list.begin.markdown", // *, -
+				"punctuation.definition.link.description", // ![]()
+				"punctuation.definition.link.title", // []()
+				"punctuation.definition.metadata.markdown", // []()
+				"punctuation.definition.quote", // >
 				// Makefile:
 				"variable.language", // ($<, $@)
 				// SQL:
@@ -115,7 +119,9 @@
 				"string", "punctuation.definition.string",
 				// Markdown:
 				"markup.fenced_code", "punctuation.definition.markdown", // ```text```
-				"markup.inline.raw.string", "punctuation.definition.raw.markdown" // `text`
+				"markup.inline.raw.string", "punctuation.definition.raw.markdown", // `text`
+				"meta.link.inline.markdown", // [text](link)
+				"meta.image.inline.markdown" // ![alt](link)
 			],
 			"settings": {
 				"foreground": "#CE9178"
@@ -153,6 +159,9 @@
 				"storage.type.object.array.java",
 				// Fixes JSON (prevents wall of strings):
 				"support.type.property-name", "punctuation.support.type.property-name",
+				// Fixes Markdown:
+				"string.other.link.description.markdown",
+				"string.other.link.title.markdown",
 				// Fixes YAML (prevents wall of keywords):
 				"entity.name.tag.yaml"
 			],
