@@ -67,7 +67,7 @@
 				"comment.block.javadoc"
 			],
 			"settings": {
-				"foreground": "#838482",
+				"foreground": "#d3d4d280",
 				"fontStyle": "italic"
 			}
 		},
@@ -97,11 +97,13 @@
 				"entity.name.tag", "punctuation.definition.tag",
 				// Java:
 				"keyword.operator.instanceof", // instanceof
+				"storage.type.primitive.java",
 				// Markdown:
 				"punctuation.definition.heading.markdown", // #, ##, ###
 				"punctuation.definition.list.begin.markdown", // *, -
 				"punctuation.definition.link.description", // ![]()
 				"punctuation.definition.link.title", // []()
+				"punctuation.definition.markdown", // ```text```
 				"punctuation.definition.metadata.markdown", // []()
 				"punctuation.definition.quote", // >
 				// Makefile:
@@ -118,7 +120,6 @@
 			"scope": [
 				"string", "punctuation.definition.string",
 				// Markdown:
-				"markup.fenced_code", "punctuation.definition.markdown", // ```text```
 				"markup.inline.raw.string", "punctuation.definition.raw.markdown", // `text`
 				"meta.link.inline.markdown", // [text](link)
 				"meta.image.inline.markdown" // ![alt](link)
@@ -139,7 +140,7 @@
 				"keyword.other.documentation.javadoc.java"
 			],
 			"settings": {
-				"foreground": "#a3a4a2", // 50% between comment and default
+				"foreground": "#d3d4d2c0", // 50% between comment and default
 				"fontStyle": "italic" // Additional italics
 			}
 		},
@@ -155,7 +156,6 @@
 				"storage.modifier.import",
 				"storage.modifier.package",
 				"storage.type.java",
-				"storage.type.primitive.java",
 				"storage.type.object.array.java",
 				// Fixes JSON (prevents wall of strings):
 				"support.type.property-name", "punctuation.support.type.property-name",

@@ -1,4 +1,8 @@
 
+## 0.8.0
+
+- Fixes highlighting in: Java, Markdown
+
 ## 0.7.0
 
 - Additional highlighting in: Markdown
