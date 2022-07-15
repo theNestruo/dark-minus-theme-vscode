@@ -1,76 +1,11 @@
 {
+	"$schema": "vscode://schemas/color-theme",
 	"name": "Dark-",
-	"type": "dark",
-	"colors": {
-		// Clones "Dark (Visual Studio) / Dark+ (default dark)" styles
-		"activityBarBadge.background": "#007acc",
-		"editor.background": "#1e1e1e",
-		"editor.foreground": "#d3d4d2", // default is "#d4d4d4"
-		"editor.inactiveSelectionBackground": "#3a3d41",
-		"editor.selectionHighlightBackground": "#add6ff26",
-		"input.placeholderForeground": "#a6a6a6",
-		"list.dropBackground": "#383b3d",
-		"menu.background": "#252526",
-		"menu.foreground": "#cccccc",
-		"ports.iconRunningProcessForeground": "#369432",
-		"sideBarSectionHeader.background": "#00000000",
-		"sideBarSectionHeader.border": "#cccccc33",
-		"sideBarTitle.foreground": "#bbbbbb",
-		"statusBarItem.remoteBackground": "#16825d",
-		"statusBarItem.remoteForeground": "#ffffff",
-		"tab.lastPinnedBorder": "#cccccc33",
-
-		// Dimmed indent guides, line numbers, rulers and whitespace
-		"editorIndentGuide.activeBackground": "#d3d4d260", // Dark (Visual Studio) is "#707070",
-		"editorIndentGuide.background": "#404040", // Dark (Visual Studio) is "#404040",
-		"editorLineNumber.activeForeground": "#d3d4d260", // default is "#c6c6c6"
-		"editorLineNumber.foreground": "#d3d4d230", // default is "#858585"
-		"editorRuler.foreground": "#d3d4d230", // default is "#5a5a5a"
-		"editorWhitespace.foreground": "#d3d4d230" // default is "#e3e4e229"
-	},
+	"include": "./dark-minus-minus-theme.json",
+	"semanticHighlighting": false,
 	"tokenColors": [
 
-		// Basic modifiers:
-		{
-			"scope": [ "emphasis", "markup.italic" ],
-			"settings": {
-				"fontStyle": "italic"
-			}
-		},
-		{
-			"scope": [ "strong", "markup.bold", "markup.heading" ],
-			"settings": {
-				"fontStyle": "bold"
-			}
-		},
-		{
-			"scope": [ "markup.underline" ],
-			"settings": {
-				"fontStyle": "underline"
-			}
-		},
-		{
-			"scope": [ "invalid" ],
-			"settings": {
-				"foreground": "#F44747"
-			}
-		},
-
 		// Colors:
-		{
-			"name": "Comments",
-			"scope": [
-				"comment", "punctuation.definition.comment",
-				// Batch:
-				"keyword.command.rem",
-				// Java:
-				"comment.block.javadoc"
-			],
-			"settings": {
-				"foreground": "#d3d4d280",
-				"fontStyle": "italic"
-			}
-		},
 		{
 			"name": "Constants",
 			"scope": [
@@ -103,7 +38,6 @@
 				"punctuation.definition.list.begin.markdown", // *, -
 				"punctuation.definition.link.description", // ![]()
 				"punctuation.definition.link.title", // []()
-				"punctuation.definition.markdown", // ```text```
 				"punctuation.definition.metadata.markdown", // []()
 				"punctuation.definition.quote", // >
 				// Makefile:
@@ -122,7 +56,8 @@
 				// Markdown:
 				"markup.inline.raw.string", "punctuation.definition.raw.markdown", // `text`
 				"meta.link.inline.markdown", // [text](link)
-				"meta.image.inline.markdown" // ![alt](link)
+				"meta.image.inline.markdown", // ![alt](link)
+				"punctuation.definition.markdown" // ```text```
 			],
 			"settings": {
 				"foreground": "#CE9178"
@@ -130,14 +65,16 @@
 		},
 
 		{
-			"name": "Java annotations, generics, and javadoc",
+			"name": "Java annotations, generics, and javadoc; Markdown annotations",
 			"scope": [
 				// Java annotations:
 				"storage.type.annotation.java", "punctuation.definition.annotation.java", "punctuation.definition.annotation-arguments",
 				// Java generics:
 				"storage.type.generic.java", "punctuation.bracket.angle.java",
 				// Javadoc:
-				"keyword.other.documentation.javadoc.java"
+				"keyword.other.documentation.javadoc.java",
+				// Markdown:
+				"fenced_code.block.language"
 			],
 			"settings": {
 				"foreground": "#d3d4d2c0", // 50% between comment and default
@@ -159,7 +96,7 @@
 				"storage.type.object.array.java",
 				// Fixes JSON (prevents wall of strings):
 				"support.type.property-name", "punctuation.support.type.property-name",
-				// Fixes Markdown:
+				// Fixes Markdown links:
 				"string.other.link.description.markdown",
 				"string.other.link.title.markdown",
 				// Fixes YAML (prevents wall of keywords):

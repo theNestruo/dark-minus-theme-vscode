@@ -1,4 +1,9 @@
 
+## 0.9.0
+
+- Fixes highlighting in: Markdown
+- Sets `semanticHighlighting` to `false`
+
 ## 0.8.0
 
 - Fixes highlighting in: Java, Markdown
