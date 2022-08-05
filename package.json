@@ -4,9 +4,9 @@
 	"displayName": "Dark-",
 	"icon": "doc/images/icon.128.png",
 	"description": "Simplified versions of the default Dark (Visual Studio) theme, with less syntax highlight",
-	"version": "0.9.0",
+	"version": "1.0.0",
 	"engines": {
-		"vscode": "^1.54.0"
+		"vscode": "^1.70.0"
 	},
 	"categories": [
 		"Themes"
@@ -23,14 +23,24 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "Dark--",
+				"label": "Dark- (default UI)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dark-minus-theme.json"
+			},
+			{
+				"label": "Dark- (flat UI)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dark-minus-flat-theme.json"
+			},
+			{
+				"label": "Dark-- (default UI)",
 				"uiTheme": "vs-dark",
 				"path": "./themes/dark-minus-minus-theme.json"
 			},
 			{
-				"label": "Dark-",
+				"label": "Dark-- (flat UI)",
 				"uiTheme": "vs-dark",
-				"path": "./themes/dark-minus-theme.json"
+				"path": "./themes/dark-minus-minus-flat-theme.json"
 			}
 		]
 	}

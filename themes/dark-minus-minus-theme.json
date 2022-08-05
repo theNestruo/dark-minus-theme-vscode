@@ -1,6 +1,6 @@
 {
 	"$schema": "vscode://schemas/color-theme",
-	"name": "Dark--",
+	"name": "Dark-- (default UI)",
 	"type": "dark",
 	"semanticHighlighting": false,
 	"colors": {
@@ -84,7 +84,7 @@
 				"invalid.illegal"
 			],
 			"settings": {
-				"foreground": "#FF5370"
+				"foreground": "#F44747"
 			}
 		},
 		{

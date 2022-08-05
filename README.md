@@ -2,59 +2,45 @@
 [![NPM CI](https://github.com/theNestruo/dark-minus-theme-vscode/workflows/NPM%20CI/badge.svg)](https://github.com/theNestruo/dark-minus-theme-vscode/actions)
 [![Visual Studio Marketplace](https://vsmarketplacebadge.apphb.com/version-short/theNestruo.dark-minus-theme.svg)](https://marketplace.visualstudio.com/items?itemName=theNestruo.dark-minus-theme)
 
+
 # Dark-
 
-Simple dark themes, based on the default _Dark (Visual Studio)_ theme but with less syntax highlight.
+Simple dark themes, based on the default _Dark (Visual Studio)_ theme but with _less_ syntax highlight.
 
-**Dark-** are actually two themes: _Dark-_ and _Dark--_.
+**Dark-** is actually comprised by four themes: the combination of two syntax themes, _Dark-_ and _Dark--_, with two workbench themes, _Default UI_ and _Flat UI_.
 
-These themes keeps the familiar new look of side bar of the _Dark (Visual Studio)_ and _Dark+ (default dark)_.
-On top of that, they both dim the whitespace, the ruler and the line numbers to improve the contrast with the actual code.
+### Rationale
+
+These themes keeps the familiar default look of side bar of the _Dark (Visual Studio)_ and _Dark+ (default dark)_.
+
+On top of that, these themes dim the whitespace, the ruler and the line numbers to improve the contrast with the actual code.
+
 The comments color is changed to gray from the default green.
 
-The _Dark-_ color theme highlights comments, constants, keywords, and strings (basically: the minimum to easily spot mispelled keywords and non terminated strings).
+### Syntax themes
 
-The _Dark--_ color theme highlights just comments.
+The _Dark-_ syntax theme highlights comments, constants, keywords, and strings (basically: the minimum to easily spot mispelled keywords and non terminated strings).
+
+The _Dark--_ syntax theme highlights just comments.
+
+### Workbench themes
+
+The _Default UI_ variations keep the familiar look of side bar of the _Dark (Visual Studio)_ and _Dark+ (default dark)_ themes.
+
+The _Flat UI_ variations theme the workbench to a flatter (and hopefully cleaner) look.
+
 
 ## Screenshots
 
-![Dark-](doc/images/dark-minus-screenshot.png)
-<br>_Theme: Dark-_
+![Dark- (flat UI)](doc/images/dark-minus-flat-screenshot.png)
+<br>_Theme: Dark- (flat UI)_
 
-![Dark--](doc/images/dark-minus-minus-screenshot.png)
-<br>_Theme: Dark--_
+![Dark- (default UI)](doc/images/dark-minus-screenshot.png)
+<br>_Theme: Dark- (default UI)_
 
-## Workbench color customizations
+![Dark-- (default UI)](doc/images/dark-minus-minus-screenshot.png)
+<br>_Theme: Dark-- (default UI)_
 
-_Dark-_ and _Dark--_ themes are designed to be a generic replacement of the default _Dark (Visual Studio)_ theme. To be generic, they only diverge from the default theme in editor syntax colors; workbench color customizations are left out from the _Dark-_ and _Dark--_ themes, as they are subject to personal perferences.
-
-Edit your settings JSON file to customize the user interface. The suggested workbench color customizations for _Dark-_ and _Dark--_ themes are:
-
-```jsonc
-"workbench.colorCustomizations": {
-	"[Dark-][Dark--]": {
-		// Flattens the UI:
-		"titleBar.activeBackground": "#252526",
-		"activityBar.background": "#252526",
-		"tab.inactiveBackground": "#252526",
-		"panel.background": "#252526",
-		// Active/accent color:
-		"tab.activeBorderTop": "#007acc",
-		"editorWidget.border": "#007acc",
-		"panelTitle.activeBorder": "#007acc",
-		"tab.unfocusedActiveBorderTop": "#0000", // (disables accent color on unfocused tabs)
-		// Dims the status bar:
-		"statusBar.background": "#007accc0"
-	},
-}
-```
-
-Please note that these suggested workbench color customizations are also compatible with the _Dark (Visual Studio)_ and _Dark+ (default dark)_ default themes.
-
-### Screenshot
-
-![Dark- with workbench color customizations](doc/images/dark-minus-tweaked-screenshot.png)
-<br>_Theme: Dark- with workbench color customizations_
 
 ## Credits
 

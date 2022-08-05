@@ -1,3 +1,6 @@
+## 1.0.0
+
+- Adds Flat UI alternatives
 
 ## 0.9.0
 
