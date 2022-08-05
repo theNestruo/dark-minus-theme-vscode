@@ -34,39 +34,68 @@
 
 		// Basic modifiers:
 		{
-			"scope": [ "emphasis", "markup.italic" ],
+			"name": "Italic",
+			"scope": [
+				"emphasis",
+				"markup.italic"
+			],
 			"settings": {
 				"fontStyle": "italic"
 			}
 		},
 		{
-			"scope": [ "strong", "markup.bold", "markup.heading" ],
+			"name": "Bold",
+			"scope": [
+				"strong",
+				"markup.bold",
+				"markup.bold string"
+			],
 			"settings": {
 				"fontStyle": "bold"
 			}
 		},
 		{
-			"scope": [ "markup.underline" ],
+			"name": "Bold-Italic",
+			"scope": [
+				"markup.bold markup.italic",
+				"markup.italic markup.bold",
+				"markup.bold markup.italic string",
+				"markup.italic markup.bold string"
+			],
 			"settings": {
-				"fontStyle": "underline"
+				"fontStyle": "bold"
 			}
 		},
 		{
-			"scope": [ "invalid" ],
+			"name": "Underline",
+			"scope": [
+				"markup.underline"
+			],
 			"settings": {
-				"foreground": "#F44747"
+				"fontStyle": "underline"
 			}
 		},
 
 		// Colors:
 		{
-			"name": "Comments",
+			"name": "Invalid",
 			"scope": [
-				"comment", "punctuation.definition.comment"
+				"invalid",
+				"invalid.illegal"
 			],
 			"settings": {
-				"foreground": "#838482",
-				"fontStyle": "italic"
+				"foreground": "#FF5370"
+			}
+		},
+		{
+			"name": "Comments",
+			"scope": [
+				"comment",
+				"punctuation.definition.comment"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#838482"
 			}
 		}
 	]

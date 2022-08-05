@@ -2,25 +2,10 @@
 	"$schema": "vscode://schemas/color-theme",
 	"name": "Dark-",
 	"include": "./dark-minus-minus-theme.json",
-	"semanticHighlighting": false,
 	"tokenColors": [
 
-		// Colors:
 		{
-			"name": "Constants",
-			"scope": [
-				"constant",
-				// Assembly:
-				"support.type.register",
-				// C/C++:
-				"keyword.other.unit"
-			],
-			"settings": {
-				"foreground": "#B5CEA8"
-			}
-		},
-		{
-			"name": "Keywords",
+			"name": "Keyword, Storage",
 			"scope": [
 				"keyword",
 				"keyword.operator.new",
@@ -49,8 +34,23 @@
 				"foreground": "#569CD6"
 			}
 		},
+
 		{
-			"name": "Strings",
+			"name": "Number, Constant",
+			"scope": [
+				"constant",
+				// Assembly:
+				"support.type.register",
+				// C/C++:
+				"keyword.other.unit"
+			],
+			"settings": {
+				"foreground": "#B5CEA8"
+			}
+		},
+
+		{
+			"name": "String",
 			"scope": [
 				"string", "punctuation.definition.string",
 				// Markdown:
@@ -65,7 +65,7 @@
 		},
 
 		{
-			"name": "Java annotations, generics, and javadoc; Markdown annotations",
+			"name": "Java annotation, Java generic, Javadoc tag, Markdown annotation",
 			"scope": [
 				// Java annotations:
 				"storage.type.annotation.java", "punctuation.definition.annotation.java", "punctuation.definition.annotation-arguments",
@@ -77,13 +77,13 @@
 				"fenced_code.block.language"
 			],
 			"settings": {
-				"foreground": "#d3d4d2c0", // 50% between comment and default
+				"foreground": "#a3a4a2", // 50% between comment and default
 				"fontStyle": "italic" // Additional italics
 			}
 		},
 
 		{
-			"name": "Restore defaults",
+			"name": "Negative match",
 			"scope": [
 				// Fixes operators (not keywords):
 				"keyword.operator",
