@@ -9,6 +9,8 @@
 			"scope": [
 				"keyword",
 				"keyword.operator.new",
+				// Batch:
+				"keyword.operator.logical.batchfile", // NOT
 				// C/C++/Java/TypeScript:
 				"storage.modifier",
 				"storage.type",

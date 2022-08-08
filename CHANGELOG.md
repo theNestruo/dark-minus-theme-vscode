@@ -1,3 +1,8 @@
+## 1.1.0
+
+- Fixes highlighting in: batch
+- Brighter active tab marker
+
 ## 1.0.0
 
 - Adds Flat UI alternatives

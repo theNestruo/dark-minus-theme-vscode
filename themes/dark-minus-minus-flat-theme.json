@@ -10,8 +10,8 @@
 		"panel.background": "#252526",
 
 		// Active/accent color:
-		"tab.activeBorderTop": "#007acc",
-		"panelTitle.activeBorder": "#007acc",
+		"tab.activeBorderTop": "#0098ff",
+		"panelTitle.activeBorder": "#0098ff",
 		"tab.unfocusedActiveBorderTop": "#0000", // (disables accent color on unfocused tabs)
 
 		// Dims the status bar:
