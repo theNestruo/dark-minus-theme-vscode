@@ -91,7 +91,9 @@
 			"name": "Comments",
 			"scope": [
 				"comment",
-				"punctuation.definition.comment"
+				"punctuation.definition.comment",
+				// Batch:
+				"keyword.command.rem.batchfile"
 			],
 			"settings": {
 				"fontStyle": "italic",

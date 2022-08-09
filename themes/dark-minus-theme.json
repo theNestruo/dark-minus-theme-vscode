@@ -69,6 +69,8 @@
 		{
 			"name": "Java annotation, Java generic, Javadoc tag, Markdown annotation",
 			"scope": [
+				// Batch:
+				"keyword.operator.at.batchfile", // @
 				// Java annotations:
 				"storage.type.annotation.java", "punctuation.definition.annotation.java", "punctuation.definition.annotation-arguments",
 				// Java generics:

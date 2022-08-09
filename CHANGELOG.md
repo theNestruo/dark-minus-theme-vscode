@@ -1,3 +1,10 @@
+## 1.2.0
+
+- Fixes highlighting in: batch
+- Flat UI when tabs are disabled
+- Darker activity notification badge
+- Darker terminal background
+
 ## 1.1.0
 
 - Fixes highlighting in: batch

@@ -6,13 +6,18 @@
 		// Flattens the UI:
 		"titleBar.activeBackground": "#252526",
 		"activityBar.background": "#252526",
+		"editorGroupHeader.noTabsBackground": "#252526",
 		"tab.inactiveBackground": "#252526",
 		"panel.background": "#252526",
 
-		// Active/accent color:
+		// Active/accent colors:
+		"activityBarBadge.background": "#0065a9",
 		"tab.activeBorderTop": "#0098ff",
 		"panelTitle.activeBorder": "#0098ff",
 		"tab.unfocusedActiveBorderTop": "#0000", // (disables accent color on unfocused tabs)
+
+		// Terminal darker than default:
+		"terminal.background": "#0f0f0f",
 
 		// Dims the status bar:
 		"statusBar.background": "#0065a9",
