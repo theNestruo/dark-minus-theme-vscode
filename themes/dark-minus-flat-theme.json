@@ -21,5 +21,8 @@
 
 		// Dims the status bar:
 		"statusBar.background": "#0065a9",
+
+		// Minor enhancements
+		"menu.separatorBackground": "#cccccc33",
 	}
 }
