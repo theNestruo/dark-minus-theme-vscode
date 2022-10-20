@@ -1,3 +1,8 @@
+## 1.3.0
+
+- Additional highlighting in: Markdown
+- Darker menu separator
+
 ## 1.2.0
 
 - Fixes highlighting in: batch
