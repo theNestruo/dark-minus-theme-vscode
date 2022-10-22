@@ -6,6 +6,7 @@
 		// Flattens the UI:
 		"titleBar.activeBackground": "#252526",
 		"activityBar.background": "#252526",
+		"editor.lineHighlightBackground": "#252526",
 		"editorGroupHeader.noTabsBackground": "#252526",
 		"tab.inactiveBackground": "#252526",
 		"panel.background": "#252526",

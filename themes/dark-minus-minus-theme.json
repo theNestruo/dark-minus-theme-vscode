@@ -9,6 +9,7 @@
 		"editor.background": "#1e1e1e",
 		"editor.foreground": "#d3d4d2", // default is "#d4d4d4"
 		"editor.inactiveSelectionBackground": "#3a3d41",
+		"editor.lineHighlightBorder": "#252526", // default is "#282828"
 		"editor.selectionHighlightBackground": "#add6ff26",
 		"input.placeholderForeground": "#a6a6a6",
 		"list.dropBackground": "#383b3d",

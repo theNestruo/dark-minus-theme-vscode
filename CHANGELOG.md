@@ -1,3 +1,7 @@
+## 1.4.0
+
+- Flat current line highlight in Flat UI alternatives
+
 ## 1.3.0
 
 - Additional highlighting in: Markdown
