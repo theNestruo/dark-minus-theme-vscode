@@ -1,3 +1,7 @@
+## 1.5.0
+
+- Clean-up and minor adjustments to match incoming new default dark theme _Dark+ (Experimental)_
+
 ## 1.4.0
 
 - Flat current line highlight in Flat UI alternatives

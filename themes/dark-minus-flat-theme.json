@@ -5,6 +5,7 @@
 	"colors": {
 		// Flattens the UI:
 		"titleBar.activeBackground": "#252526",
+		"sideBarSectionHeader.background": "#252526",
 		"activityBar.background": "#252526",
 		"editor.lineHighlightBackground": "#252526",
 		"editorGroupHeader.noTabsBackground": "#252526",
@@ -20,10 +21,14 @@
 		// Terminal darker than default:
 		"terminal.background": "#0f0f0f",
 
-		// Dims the status bar:
-		"statusBar.background": "#0065a9",
+		// Keeps "classic" status bar colors:
+		"statusBar.background": "#0065a9", // (dimmed; default is "#007acc")
+		"statusBar.debuggingBackground": "#cc6633", // (default is "#cc6633")
+		"statusBar.noFolderBackground": "#68217a", // (default is "#68217a")
 
 		// Minor enhancements
 		"menu.separatorBackground": "#cccccc33",
+		"sideBarSectionHeader.border": "#cccccc33",
+		"editorGroup.border": "#cccccc33" // (default is "#444444")
 	}
 }

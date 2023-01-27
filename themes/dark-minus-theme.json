@@ -33,7 +33,7 @@
 				"support.function.aggregate.sql"
 			],
 			"settings": {
-				"foreground": "#569CD6"
+				"foreground": "#569cd6" // (from "Dark (Visual Studio)")
 			}
 		},
 
@@ -47,7 +47,7 @@
 				"keyword.other.unit"
 			],
 			"settings": {
-				"foreground": "#B5CEA8"
+				"foreground": "#b5cea8" // (from "Dark (Visual Studio)")
 			}
 		},
 
@@ -62,7 +62,7 @@
 				"punctuation.definition.markdown" // ```text```
 			],
 			"settings": {
-				"foreground": "#CE9178"
+				"foreground": "#ce9178" // (from "Dark (Visual Studio)")
 			}
 		},
 
@@ -81,8 +81,8 @@
 				"fenced_code.block.language"
 			],
 			"settings": {
-				"foreground": "#a3a4a2", // 50% between comment and default
-				"fontStyle": "italic" // Additional italics
+				"foreground": "#d3d4d2c0", // (halfway between editor.foreground and comment)
+				"fontStyle": "italic" // (additional italics)
 			}
 		},
 
@@ -107,7 +107,7 @@
 				"entity.name.tag.yaml"
 			],
 			"settings": {
-				"foreground": "#d3d4d2"
+				"foreground": "#d3d4d2" // (same as "editor.foreground")
 			}
 		}
 	]

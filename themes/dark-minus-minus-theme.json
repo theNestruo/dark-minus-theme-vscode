@@ -5,31 +5,13 @@
 	"semanticHighlighting": false,
 	"colors": {
 		// Clones "Dark (Visual Studio) / Dark+ (default dark)" styles
-		"activityBarBadge.background": "#007acc",
-		"editor.background": "#1e1e1e",
-		"editor.foreground": "#d3d4d2", // default is "#d4d4d4"
-		"editor.inactiveSelectionBackground": "#3a3d41",
-		"editor.lineHighlightBorder": "#252526", // default is "#282828"
-		"editor.selectionHighlightBackground": "#add6ff26",
-		"input.placeholderForeground": "#a6a6a6",
-		"list.dropBackground": "#383b3d",
-		"menu.background": "#252526",
-		"menu.foreground": "#cccccc",
-		"ports.iconRunningProcessForeground": "#369432",
-		"sideBarSectionHeader.background": "#00000000",
-		"sideBarSectionHeader.border": "#cccccc33",
-		"sideBarTitle.foreground": "#bbbbbb",
-		"statusBarItem.remoteBackground": "#16825d",
-		"statusBarItem.remoteForeground": "#ffffff",
-		"tab.lastPinnedBorder": "#cccccc33",
+		"editor.foreground": "#d3d4d2", // (default is "#bbbbbb")
 
 		// Dimmed indent guides, line numbers, rulers and whitespace
-		"editorIndentGuide.activeBackground": "#d3d4d260", // Dark (Visual Studio) is "#707070",
-		"editorIndentGuide.background": "#404040", // Dark (Visual Studio) is "#404040",
-		"editorLineNumber.activeForeground": "#d3d4d260", // default is "#c6c6c6"
-		"editorLineNumber.foreground": "#d3d4d230", // default is "#858585"
-		"editorRuler.foreground": "#d3d4d230", // default is "#5a5a5a"
-		"editorWhitespace.foreground": "#d3d4d230" // default is "#e3e4e229"
+		"editorLineNumber.activeForeground": "#d3d4d260", // (default is "#c6c6c6")
+		"editorLineNumber.foreground": "#d3d4d230", // (default is "#858585")
+		"editorRuler.foreground": "#d3d4d230", // (default is "#5a5a5a")
+		"editorWhitespace.foreground": "#d3d4d230" // (default is "#e3e4e229")
 	},
 	"tokenColors": [
 
@@ -56,15 +38,15 @@
 			}
 		},
 		{
-			"name": "Bold-Italic",
+			"name": "Italic+Bold",
 			"scope": [
-				"markup.bold markup.italic",
 				"markup.italic markup.bold",
-				"markup.bold markup.italic string",
-				"markup.italic markup.bold string"
+				"markup.bold markup.italic",
+				"markup.italic markup.bold string",
+				"markup.bold markup.italic string"
 			],
 			"settings": {
-				"fontStyle": "bold"
+				"fontStyle": "italic bold"
 			}
 		},
 		{
@@ -74,6 +56,40 @@
 			],
 			"settings": {
 				"fontStyle": "underline"
+			}
+		},
+		{
+			"name": "Italic+Underline",
+			"scope": [
+				"markup.italic markup.underline",
+				"markup.underline markup.italic"
+			],
+			"settings": {
+				"fontStyle": "italic underline"
+			}
+		},
+		{
+			"name": "Bold+Underline",
+			"scope": [
+				"markup.bold markup.underline",
+				"markup.underline markup.bold"
+			],
+			"settings": {
+				"fontStyle": "bold underline"
+			}
+		},
+		{
+			"name": "Italic+Bold+Underline",
+			"scope": [
+				"markup.italic markup.bold markup.underline",
+				"markup.italic markup.underline markup.bold",
+				"markup.bold markup.italic markup.underline",
+				"markup.underline markup.italic markup.bold",
+				"markup.bold markup.underline markup.italic",
+				"markup.underline markup.bold markup.italic",
+			],
+			"settings": {
+				"fontStyle": "italic bold underline"
 			}
 		},
 		{
@@ -94,7 +110,7 @@
 				"invalid.illegal"
 			],
 			"settings": {
-				"foreground": "#F44747"
+				"foreground": "#f44747" // (from "Dark (Visual Studio)")
 			}
 		},
 		{
@@ -107,7 +123,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#838482"
+				"foreground": "#d3d4d280"
 			}
 		}
 	]
