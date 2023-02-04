@@ -1,3 +1,7 @@
+## 1.6.0
+
+- Minor improvements (such as `"badge.background"` and `"statusBarItem.remoteBackground"`)
+
 ## 1.5.0
 
 - Clean-up and minor adjustments to match incoming new default dark theme _Dark+ (Experimental)_
