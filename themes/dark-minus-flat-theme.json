@@ -12,23 +12,28 @@
 		"tab.inactiveBackground": "#252526",
 		"panel.background": "#252526",
 
-		// Active/accent colors:
-		"activityBarBadge.background": "#0065a9",
-		"tab.activeBorderTop": "#0098ff",
-		"panelTitle.activeBorder": "#0098ff",
-		"tab.unfocusedActiveBorderTop": "#0000", // (disables accent color on unfocused tabs)
-
 		// Terminal darker than default:
 		"terminal.background": "#0f0f0f",
 
 		// Keeps "classic" status bar colors:
-		"statusBar.background": "#0065a9", // (dimmed; default is "#007acc")
+		"statusBar.background": "#0e639c", // (dimmed; default is "#007acc")
 		"statusBar.debuggingBackground": "#cc6633", // (default is "#cc6633")
 		"statusBar.noFolderBackground": "#68217a", // (default is "#68217a")
+		"statusBarItem.remoteBackground": "#16825d", // (default is "#16825d")
+
+		// Few borders:
+		"sideBarSectionHeader.border": "#454545",
+		"panel.border": "#454545",
+		"editorGroup.border": "#454545",
+
+		// Active/accent colors:
+		"badge.background": "#0e639c",
+		"activityBarBadge.background": "#007acc",
+		"tab.activeBorderTop": "#0098ff",
+		"panelTitle.activeBorder": "#0098ff",
+		"tab.unfocusedActiveBorderTop": "#0000", // (disables accent color on unfocused tabs)
 
 		// Minor enhancements
-		"menu.separatorBackground": "#cccccc33",
-		"sideBarSectionHeader.border": "#cccccc33",
-		"editorGroup.border": "#cccccc33" // (default is "#444444")
+		"menu.selectionBackground": "#0e639c", // (improves contrast)
 	}
 }
