@@ -9,6 +9,7 @@
 		"activityBar.background": "#252526",
 		"editor.lineHighlightBackground": "#252526",
 		"editorGroupHeader.noTabsBackground": "#252526",
+		"editorWidget.background": "#1e1e1e",
 		"tab.inactiveBackground": "#252526",
 		"panel.background": "#252526",
 
@@ -31,7 +32,7 @@
 		"activityBarBadge.background": "#007acc",
 		"tab.activeBorderTop": "#0098ff",
 		"panelTitle.activeBorder": "#0098ff",
-		"tab.unfocusedActiveBorderTop": "#0000", // (disables accent color on unfocused tabs)
+		"tab.unfocusedActiveBorderTop": "#454545",
 
 		// Minor enhancements
 		"menu.selectionBackground": "#0e639c", // (improves contrast)

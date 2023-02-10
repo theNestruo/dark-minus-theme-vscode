@@ -1,3 +1,7 @@
+## 1.7.0
+
+- Minor improvements (`"editorWidget.background"` and `"tab.unfocusedActiveBorderTop"`)
+
 ## 1.6.0
 
 - Minor improvements (such as `"badge.background"` and `"statusBarItem.remoteBackground"`)
