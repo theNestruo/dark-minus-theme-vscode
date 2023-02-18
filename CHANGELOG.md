@@ -1,3 +1,7 @@
+## 1.8.0
+
+- Minor improvements
+
 ## 1.7.0
 
 - Minor improvements (`"editorWidget.background"` and `"tab.unfocusedActiveBorderTop"`)

@@ -4,14 +4,17 @@
 	"include": "./dark-minus-minus-theme.json",
 	"colors": {
 		// Flattens the UI:
-		"titleBar.activeBackground": "#252526",
-		"sideBarSectionHeader.background": "#252526",
 		"activityBar.background": "#252526",
+		"breadcrumbPicker.background": "#3c3c3c",
 		"editor.lineHighlightBackground": "#252526",
 		"editorGroupHeader.noTabsBackground": "#252526",
 		"editorWidget.background": "#1e1e1e",
-		"tab.inactiveBackground": "#252526",
+		"listFilterWidget.background": "#252526",
 		"panel.background": "#252526",
+		"quickInput.background": "#3c3c3c",
+		"sideBarSectionHeader.background": "#252526",
+		"tab.inactiveBackground": "#252526",
+		"titleBar.activeBackground": "#252526",
 
 		// Terminal darker than default:
 		"terminal.background": "#0f0f0f",
@@ -22,19 +25,21 @@
 		"statusBar.noFolderBackground": "#68217a", // (default is "#68217a")
 		"statusBarItem.remoteBackground": "#16825d", // (default is "#16825d")
 
-		// Few borders:
-		"sideBarSectionHeader.border": "#454545",
-		"panel.border": "#454545",
+		// Few borders to improve readability:
 		"editorGroup.border": "#454545",
+		"panel.border": "#454545",
+		"sideBar.border": "#1e1e1e",
+		"sideBarSectionHeader.border": "#454545",
 
 		// Active/accent colors:
-		"badge.background": "#0e639c",
 		"activityBarBadge.background": "#007acc",
-		"tab.activeBorderTop": "#0098ff",
+		"badge.background": "#0e639c",
 		"panelTitle.activeBorder": "#0098ff",
+		"tab.activeBorderTop": "#0098ff",
 		"tab.unfocusedActiveBorderTop": "#454545",
 
-		// Minor enhancements
-		"menu.selectionBackground": "#0e639c", // (improves contrast)
+		// Contrast improvement:
+		"menu.selectionBackground": "#0e639c",
+		"quickInputList.focusBackground": "#0e639c",
 	}
 }
