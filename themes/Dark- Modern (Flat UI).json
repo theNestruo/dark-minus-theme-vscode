@@ -1,0 +1,128 @@
+{
+	"$schema": "vscode://schemas/color-theme",
+	"name": "Dark- (Flat Modern)",
+	"include": "./Dark-.json",
+	"colors": {
+		// Flattens the UI (based on "Default Dark Modern" workbench colors):
+		"activityBar.background": "#181818",
+		"activityBar.foreground": "#D7D7D7",
+		"activityBar.inactiveForeground": "#868686",
+		"editor.background": "#1F1F1F",
+		"editor.foreground": "#CCCCCC",
+		"editor.lineHighlightBackground": "#252526",
+		"editorGroupHeader.noTabsBackground": "#252526",
+		"editorGroupHeader.tabsBackground": "#181818",
+		"editorWidget.background": "#1e1e1e",
+		"input.background": "#313131",
+		"input.foreground": "#CCCCCC",
+		"input.placeholderForeground": "#9D9D9D",
+		"inputOption.activeBackground": "#2489DB82",
+		"listFilterWidget.background": "#252526",
+		"menu.background": "#1F1F1F",
+		"panel.background": "#181818",
+		"panelTitle.activeForeground": "#CCCCCC",
+		"panelTitle.inactiveForeground": "#9D9D9D",
+		"quickInput.background": "#222222",
+		"quickInput.foreground": "#CCCCCC",
+		"sideBar.background": "#181818",
+		"sideBar.foreground": "#CCCCCC",
+		"sideBarSectionHeader.background": "#181818",
+		"sideBarSectionHeader.foreground": "#CCCCCC",
+		"sideBarTitle.foreground": "#CCCCCC",
+		"statusBar.background": "#181818",
+		"statusBar.debuggingBackground": "#0078D4",
+		"statusBar.debuggingForeground": "#FFFFFF",
+		"statusBar.focusBorder": "#0078D4",
+		"statusBar.foreground": "#CCCCCC",
+		"statusBar.noFolderBackground": "#1F1F1F",
+		"statusBarItem.focusBorder": "#0078D4",
+		"statusBarItem.prominentBackground": "#6E768166",
+		"statusBarItem.remoteBackground": "#0078D4",
+		"statusBarItem.remoteForeground": "#FFFFFF",
+		"tab.activeBackground": "#1F1F1F",
+		"tab.activeForeground": "#FFFFFF",
+		"tab.border": "#0000",
+		"tab.inactiveBackground": "#181818",
+		"titleBar.activeBackground": "#181818",
+		"titleBar.activeForeground": "#CCCCCC",
+		"titleBar.inactiveBackground": "#181818",
+		"titleBar.inactiveForeground": "#9D9D9D",
+		"widget.border": "#0000",
+
+		// Terminal darker than default:
+		"terminal.background": "#0f0f0f",
+
+		// Few borders to improve readability:
+		"editorGroup.border": "#2B2B2B",
+		"panel.border": "#2B2B2B",
+		"sideBarSectionHeader.border": "#2B2B2B",
+
+		// Active/accent colors:
+		"activityBarBadge.background": "#0078D4",
+		"panelTitle.activeBorder": "#0078D4",
+		"terminal.tab.activeBorder": "#0078D4",
+		"tab.activeBorderTop": "#0078D4",
+		"tab.unfocusedActiveBorderTop": "#454545",
+	},
+	"tokenColors": [
+
+		// Updates editor.foreground related colors:
+		{
+			"name": "Comments",
+			"scope": [
+				"comment",
+				"punctuation.definition.comment",
+				// Batch:
+				"keyword.command.rem.batchfile"
+			],
+			"settings": {
+				"foreground": "#cccccc80"
+			}
+		},
+
+		{
+			"name": "Java annotation, Java generic, Javadoc tag, Markdown annotation",
+			"scope": [
+				// Batch:
+				"keyword.operator.at.batchfile", // @
+				// Java annotations:
+				"storage.type.annotation.java", "punctuation.definition.annotation.java", "punctuation.definition.annotation-arguments",
+				// Java generics:
+				"storage.type.generic.java", "punctuation.bracket.angle.java",
+				// Javadoc:
+				"keyword.other.documentation.javadoc.java",
+				// Markdown:
+				"fenced_code.block.language"
+			],
+			"settings": {
+				"foreground": "#ccccccc0", // (halfway between editor.foreground and comment)
+				"fontStyle": "italic" // (additional italics)
+			}
+		},
+
+		{
+			"name": "Negative match",
+			"scope": [
+				// Fixes operators (not keywords):
+				"keyword.operator",
+				"storage.type.function.arrow",
+				"storage.modifier.array.bracket",
+				// Fixes Java (package name, imports and class names as keywords):
+				"storage.modifier.import",
+				"storage.modifier.package",
+				"storage.type.java",
+				"storage.type.object.array.java",
+				// Fixes JSON (prevents wall of strings):
+				"support.type.property-name", "punctuation.support.type.property-name",
+				// Fixes Markdown links:
+				"string.other.link.description.markdown",
+				"string.other.link.title.markdown",
+				// Fixes YAML (prevents wall of keywords):
+				"entity.name.tag.yaml"
+			],
+			"settings": {
+				"foreground": "#cccccc" // (same as "editor.foreground")
+			}
+		}
+	]
+}

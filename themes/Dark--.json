@@ -1,18 +1,42 @@
 {
 	"$schema": "vscode://schemas/color-theme",
-	"name": "Dark-- (default UI)",
+	"name": "Dark-- (Visual Studio)",
 	"type": "dark",
-	"semanticHighlighting": false,
 	"colors": {
-		// Clones "Dark (Visual Studio) / Dark+ (default dark)" styles
-		"editor.foreground": "#d3d4d2", // (default is "#bbbbbb")
+		// Clones "Dark (Visual Studio)" workbench style
+		// (https://github.com/microsoft/vscode/blob/main/extensions/theme-defaults/themes/dark_vs.json)
+		"checkbox.border": "#6B6B6B",
+		"editor.background": "#1E1E1E",
+		"editor.foreground": "#D4D4D4",
+		"editor.inactiveSelectionBackground": "#3A3D41",
+		"editorIndentGuide.background1": "#404040",
+		"editorIndentGuide.activeBackground1": "#707070",
+		"editor.selectionHighlightBackground": "#ADD6FF26",
+		"list.dropBackground": "#383B3D",
+		"activityBarBadge.background": "#007ACC",
+		"sideBarTitle.foreground": "#BBBBBB",
+		"input.placeholderForeground": "#A6A6A6",
+		"menu.background": "#252526",
+		"menu.foreground": "#CCCCCC",
+		"menu.separatorBackground": "#454545",
+		"menu.border": "#454545",
+		"statusBarItem.remoteForeground": "#FFF",
+		"statusBarItem.remoteBackground": "#16825D",
+		"ports.iconRunningProcessForeground": "#369432",
+		"sideBarSectionHeader.background": "#0000",
+		"sideBarSectionHeader.border": "#ccc3",
+		"tab.lastPinnedBorder": "#ccc3",
+		"list.activeSelectionIconForeground": "#FFF",
+		"terminal.inactiveSelectionBackground": "#3A3D41",
+		"widget.border": "#303031",
 
 		// Dimmed indent guides, line numbers, rulers and whitespace
-		"editorLineNumber.activeForeground": "#d3d4d260", // (default is "#c6c6c6")
-		"editorLineNumber.foreground": "#d3d4d230", // (default is "#858585")
-		"editorRuler.foreground": "#d3d4d230", // (default is "#5a5a5a")
-		"editorWhitespace.foreground": "#d3d4d230" // (default is "#e3e4e229")
+		"editorLineNumber.activeForeground": "#d4d4d460", // (default is "#c6c6c6")
+		"editorLineNumber.foreground": "#d4d4d430", // (default is "#858585")
+		"editorRuler.foreground": "#d4d4d430", // (default is "#5a5a5a")
+		"editorWhitespace.foreground": "#d4d4d430" // (default is "#e3e4e229")
 	},
+	"semanticHighlighting": false,
 	"tokenColors": [
 
 		// Basic modifiers:
@@ -123,7 +147,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#d3d4d280"
+				"foreground": "#d4d4d480"
 			}
 		}
 	]

@@ -1,9 +1,8 @@
 {
 	"$schema": "vscode://schemas/color-theme",
-	"name": "Dark- (default UI)",
-	"include": "./dark-minus-minus-theme.json",
+	"name": "Dark- (Visual Studio)",
+	"include": "./Dark--.json",
 	"tokenColors": [
-
 		{
 			"name": "Keyword, Storage",
 			"scope": [
@@ -81,7 +80,7 @@
 				"fenced_code.block.language"
 			],
 			"settings": {
-				"foreground": "#d3d4d2c0", // (halfway between editor.foreground and comment)
+				"foreground": "#d4d4d4c0", // (halfway between editor.foreground and comment)
 				"fontStyle": "italic" // (additional italics)
 			}
 		},
@@ -107,7 +106,7 @@
 				"entity.name.tag.yaml"
 			],
 			"settings": {
-				"foreground": "#d3d4d2" // (same as "editor.foreground")
+				"foreground": "#d4d4d4" // (same as "editor.foreground")
 			}
 		}
 	]

@@ -1,3 +1,8 @@
+## 2.0.0
+
+- "Dark Modern"-based variants
+- Themes renamed to better match VS Code default theme names
+
 ## 1.8.0
 
 - Minor improvements
