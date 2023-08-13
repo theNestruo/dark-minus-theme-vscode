@@ -1,7 +1,7 @@
 {
 	"$schema": "vscode://schemas/color-theme",
 	"name": "Dark- (Flat Visual Studio)",
-	"include": "./Dark-.json",
+	"include": "./Dark-.color-theme.json",
 	"colors": {
 		// Flattens the UI (based on "Dark (Visual Studio)" workbench colors):
 		"activityBar.background": "#252526",
@@ -12,7 +12,6 @@
 		"panel.background": "#252526",
 		"quickInput.background": "#252526",
 		"sideBarSectionHeader.background": "#252526",
-		"statusBar.background": "#0e639c", // (dimmed; default is "#007acc")
 		"tab.inactiveBackground": "#252526",
 		"titleBar.activeBackground": "#252526",
 

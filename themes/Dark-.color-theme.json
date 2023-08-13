@@ -1,7 +1,7 @@
 {
 	"$schema": "vscode://schemas/color-theme",
 	"name": "Dark- (Visual Studio)",
-	"include": "./Dark--.json",
+	"include": "./Dark--.color-theme.json",
 	"tokenColors": [
 		{
 			"name": "Keyword, Storage",

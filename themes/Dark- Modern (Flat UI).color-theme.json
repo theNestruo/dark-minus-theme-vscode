@@ -1,7 +1,7 @@
 {
 	"$schema": "vscode://schemas/color-theme",
 	"name": "Dark- (Flat Modern)",
-	"include": "./Dark-.json",
+	"include": "./Dark-.color-theme.json",
 	"colors": {
 		// Flattens the UI (based on "Default Dark Modern" workbench colors):
 		"activityBar.background": "#181818",

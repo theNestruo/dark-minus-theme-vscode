@@ -18,29 +18,29 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "Dark-- (Visual Studio)",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Dark--.json"
-			},
-			{
-				"label": "Dark- (Visual Studio)",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Dark-.json"
-			},
-			{
-				"label": "Dark- (Visual Studio) (Flat UI)",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Dark- (Flat UI).json"
-			},
-			{
 				"label": "Dark- Modern",
 				"uiTheme": "vs-dark",
-				"path": "./themes/Dark- Modern.json"
+				"path": "./themes/Dark- Modern.color-theme.json"
 			},
 			{
 				"label": "Dark- Modern (Flat UI)",
 				"uiTheme": "vs-dark",
-				"path": "./themes/Dark- Modern (Flat UI).json"
+				"path": "./themes/Dark- Modern (Flat UI).color-theme.json"
+			},
+			{
+				"label": "Dark- (Visual Studio)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Dark-.color-theme.json"
+			},
+			{
+				"label": "Dark- (Visual Studio) (Flat UI)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Dark- (Flat UI).color-theme.json"
+			},
+			{
+				"label": "Dark-- (Visual Studio)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Dark--.color-theme.json"
 			}
 		]
 	},
