@@ -53,35 +53,36 @@ Those customizations have been removed from the theme for simplicity and consist
 
 ### Suggestions
 
-To use the dimmed status bar from the previous versions of _Dark-_:
+- Restore the "classic" status bar colors when using one of the _Dark- Modern_ variations:
 
-```json
-"workbench.colorCustomizations": {
-	"statusBar.background": "#07314e"
-}
-```
+	```json
+	"workbench.colorCustomizations": {
+		"statusBar.background": "#007acc",
+		"statusBar.debuggingBackground": "#cc6633",
+		"statusBar.foreground": "#ffffff",
+		"statusBar.noFolderBackground": "#68217a",
+		"statusBarItem.remoteBackground": "#16825d"
+	}
+	```
 
-To restore the "classic" status bar colors when using one of the _Dark- Modern_ variations:
+- The status bar color from the previous versions of the _Dark-_ theme was `#0e639c` (darker than the default `#007acc`):
 
-```json
-"workbench.colorCustomizations": {
-	"statusBar.background": "#007acc",
-	"statusBar.debuggingBackground": "#cc6633",
-	"statusBar.foreground": "#ffffff",
-	"statusBar.noFolderBackground": "#68217a",
-	"statusBarItem.remoteBackground": "#16825d"
-}
-```
+	```json
+	"workbench.colorCustomizations": {
+		"statusBar.background": "#0e639c"
+	}
+	```
 
-For a reference, the default status bar colors in _Dark (Visual Studio)_ and _Dark+_ are:
+>	For a reference, the default status bar colors in _Dark (Visual Studio)_ and _Dark+_ are:
+>
+>	```json
+>	"statusBar.background": "#007acc",
+>	"statusBar.debuggingBackground": "#cc6633",
+>	"statusBar.foreground": "#ffffff",
+>	"statusBar.noFolderBackground": "#68217a",
+>	"statusBarItem.remoteBackground": "#16825d"
+>	```
 
-```json
-"statusBar.background": "#007acc",
-"statusBar.debuggingBackground": "#cc6633",
-"statusBar.foreground": "#ffffff",
-"statusBar.noFolderBackground": "#68217a",
-"statusBarItem.remoteBackground": "#16825d"
-```
 
 ## Credits
 
