@@ -2,6 +2,7 @@
 
 - "Dark Modern"-based variants
 - Themes renamed to better match VS Code default theme names
+- Status bar customizations removed from the themes
 
 ## 1.8.0
 
