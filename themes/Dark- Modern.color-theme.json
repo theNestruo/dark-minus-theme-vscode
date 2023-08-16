@@ -1,6 +1,6 @@
 {
 	"$schema": "vscode://schemas/color-theme",
-	"name": "Dark- (Modern)",
+	"name": "Dark- Modern",
 	"include": "./Dark-.color-theme.json",
 	"colors": {
 		// Clones "Default Dark Modern" workbench style

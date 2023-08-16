@@ -1,6 +1,6 @@
 {
 	"$schema": "vscode://schemas/color-theme",
-	"name": "Dark- (Flat Visual Studio)",
+	"name": "Dark- (Visual Studio) (Flat UI)",
 	"include": "./Dark-.color-theme.json",
 	"colors": {
 		// Flattens the UI (based on "Dark (Visual Studio)" workbench colors):
