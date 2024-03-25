@@ -86,5 +86,5 @@ Those customizations have been removed from the theme for simplicity and consist
 
 ## Credits
 
-[**theNestruo**](https://github.com/theNestruo) ([Néstor Sancho](https://twitter.com/NestorSancho)).
+[**theNestruo**](https://github.com/theNestruo) (Néstor Sancho).
 
