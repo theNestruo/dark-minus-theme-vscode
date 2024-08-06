@@ -3,7 +3,7 @@ name: vsce package and upload
 on:
   push:
     branches:
-    - master
+    - main
 
 jobs:
   build:
