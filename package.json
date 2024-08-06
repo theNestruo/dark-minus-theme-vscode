@@ -2,18 +2,32 @@
 	"publisher": "theNestruo",
 	"name": "dark-minus-theme",
 	"version": "2.0.0",
+	"engines": {
+		"vscode": "^1.81.0"
+	},
 	"displayName": "Dark-",
 	"description": "Simplified versions of the default Dark (Visual Studio) theme, with less syntax highlight",
-	"categories": [
-		"Themes"
-	],
-	"icon": "doc/images/icon.128.png",
+	"icon": "images/icon.128.png",
 	"galleryBanner": {
 		"color": "1e1e1e",
 		"theme": "dark"
 	},
-	"engines": {
-		"vscode": "^1.81.0"
+	"categories": [
+		"Themes"
+	],
+	"license": "LGPL-3.0",
+	"homepage": "https://github.com/theNestruo/dark-minus-theme-vscode",
+	"bugs": {
+		"url": "https://github.com/theNestruo/dark-minus-theme-vscode/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/theNestruo/dark-minus-theme-vscode.git"
+	},
+	"author": {
+		"email": "theNestruo@gmail.com",
+		"name": "Néstor Sancho",
+		"url": "https://thenestruo.github.io/"
 	},
 	"contributes": {
 		"themes": [
@@ -43,14 +57,5 @@
 				"path": "./themes/Dark--.color-theme.json"
 			}
 		]
-	},
-	"homepage": "https://github.com/theNestruo/dark-minus-theme-vscode",
-	"bugs": {
-		"url": "https://github.com/theNestruo/dark-minus-theme-vscode/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/theNestruo/dark-minus-theme-vscode.git"
-	},
-	"license": "LGPL-3.0"
+	}
 }

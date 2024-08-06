@@ -36,13 +36,13 @@ This syntax theme is available in the **Dark-- (Visual Studio)** workbench theme
 
 ## Screenshots
 
-![Dark- (Visual Studio) (Flat UI)](doc/images/Dark-%20(Flat%20UI).screenshot.png)
+![Dark- (Visual Studio) (Flat UI)](images/Dark-%20(Flat%20UI).screenshot.png)
 <br>_Theme: Dark- (Visual Studio) (Flat UI)_
 
-![Dark- Modern (Flat UI)](doc/images/Dark-%20Modern%20(Flat%20UI).screenshot.png)
+![Dark- Modern (Flat UI)](images/Dark-%20Modern%20(Flat%20UI).screenshot.png)
 <br>_Theme: Dark- Modern (Flat UI))_
 
-![Dark-- (Visual Studio)](doc/images/Dark--.screenshot.png)
+![Dark-- (Visual Studio)](images/Dark--.screenshot.png)
 <br>_Theme: Dark-- (Visual Studio)_
 
 ## Customizations
