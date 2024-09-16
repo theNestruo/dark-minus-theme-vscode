@@ -1,3 +1,8 @@
+## 2.1.0
+
+- Updated from reference workbench styles
+- Fixes "Dark- Modern (Flat UI)" not using the same badge and button colors as "Dark Modern" (reference)
+
 ## 2.0.0
 
 - "Dark Modern"-based variants
