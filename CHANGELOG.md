@@ -1,3 +1,7 @@
+## 2.2.0
+
+- Minor improvements (such as `"support.type.primitive.ts"` and `"support.other.attribute.cpp"`)
+
 ## 2.1.0
 
 - Updated from reference workbench styles

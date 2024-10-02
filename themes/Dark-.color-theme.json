@@ -13,7 +13,7 @@
 				// C/C++/Java/TypeScript:
 				"storage.modifier",
 				"storage.type",
-				"support.type",
+				"support.type.primitive.ts",
 				// HTML/XML/...:
 				"entity.name.tag", "punctuation.definition.tag",
 				// Java:
@@ -70,6 +70,8 @@
 			"scope": [
 				// Batch:
 				"keyword.operator.at.batchfile", // @
+				// C/C++:
+				"support.other.attribute.cpp",
 				// Java annotations:
 				"storage.type.annotation.java", "punctuation.definition.annotation.java", "punctuation.definition.annotation-arguments",
 				// Java generics:
