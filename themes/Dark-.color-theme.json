@@ -71,6 +71,7 @@
 				// Batch:
 				"keyword.operator.at.batchfile", // @
 				// C/C++:
+				"entity.name.scope-resolution", "punctuation.separator.scope-resolution",
 				"support.other.attribute.cpp",
 				// Java annotations:
 				"storage.type.annotation.java", "punctuation.definition.annotation.java", "punctuation.definition.annotation-arguments",
