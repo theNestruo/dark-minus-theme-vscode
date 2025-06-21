@@ -1,6 +1,6 @@
-
-[![NPM CI](https://github.com/theNestruo/dark-minus-theme-vscode/workflows/NPM%20CI/badge.svg)](https://github.com/theNestruo/dark-minus-theme-vscode/actions)
+[![Open VSX Version](https://img.shields.io/open-vsx/v/theNestruo/dark-minus-theme)](https://open-vsx.org/extension/theNestruo/dark-minus-theme)
 [![Visual Studio Marketplace](https://vsmarketplacebadges.dev/version-short/theNestruo.dark-minus-theme.png)](https://marketplace.visualstudio.com/items?itemName=theNestruo.dark-minus-theme)
+
 
 # Dark-
 
