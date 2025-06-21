@@ -18,20 +18,15 @@ jobs:
       with:
         node-version: 20
 
-    - name: Install the dependencies
-      run: npm install
+    - run: npm ci
 
-    - name: Install vsce
-      run: npm install --global @vscode/vsce
-
-    - run: vsce package
-
-    # - name: Read version
-    #   id: get-version
-    #   uses: martinbeentjes/npm-get-version-action@main
-
-    # - name: Upload nightly build
-    #   uses: actions/upload-artifact@v4
+    # - name: Publish to Open VSX Registry
+    #   uses: HaaLeo/publish-vscode-extension@v2
     #   with:
-    #     name: dark-minus-theme-${{ steps.get-version.outputs.current-version}}-nightly
-    #     path: dark-minus-theme-${{ steps.get-version.outputs.current-version}}.vsix
+    #     pat: ${{ secrets.OPEN_VSX_TOKEN }}
+
+    # - name: Publish to Visual Studio Marketplace
+    #   uses: HaaLeo/publish-vscode-extension@v2
+    #   with:
+    #     pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+    #     registryUrl: https://marketplace.visualstudio.com
