@@ -18,20 +18,19 @@ jobs:
       with:
         node-version: 20
 
-    - name: Clean install
-      run: npm ci
+    - run: npm ci
 
     - name: Install vsce
       run: npm install --global @vscode/vsce
 
     - run: vsce package
 
-    # - name: Read version
-    #   id: get-version
-    #   uses: martinbeentjes/npm-get-version-action@main
+    - name: Read version
+      id: get-version
+      uses: martinbeentjes/npm-get-version-action@main
 
-    # - name: Upload nightly build
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #     name: dark-minus-theme-${{ steps.get-version.outputs.current-version}}-nightly
-    #     path: dark-minus-theme-${{ steps.get-version.outputs.current-version}}.vsix
+    - name: Upload nightly build
+      uses: actions/upload-artifact@v4
+      with:
+        name: dark-minus-theme-${{ steps.get-version.outputs.current-version}}-nightly
+        path: dark-minus-theme-${{ steps.get-version.outputs.current-version}}.vsix
