@@ -20,6 +20,8 @@ jobs:
 
     - run: npm ci
 
+    - run: vsce package
+
     # - name: Read version
     #   id: get-version
     #   uses: martinbeentjes/npm-get-version-action@main
