@@ -1,9 +1,9 @@
-name: npm ci test
+name: vsce package and publish
 
 on:
   push:
-    branches:
-    - ci
+    tags:
+    - "*"
 
 jobs:
   build:
@@ -24,11 +24,9 @@ jobs:
       uses: HaaLeo/publish-vscode-extension@v2
       with:
         pat: ${{ secrets.OPEN_VSX_TOKEN }}
-        preRelease: true
 
     - name: Publish to Visual Studio Marketplace
       uses: HaaLeo/publish-vscode-extension@v2
       with:
         pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
         registryUrl: https://marketplace.visualstudio.com
-        preRelease: true

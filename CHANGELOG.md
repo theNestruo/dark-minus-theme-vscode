@@ -1,4 +1,8 @@
-## 2.2.0
+## 2.3.x
+
+- (internal CI/CD tests)
+
+## 2.3.0
 
 - Minor improvements (such as `"entity.name.scope-resolution"`)
 
