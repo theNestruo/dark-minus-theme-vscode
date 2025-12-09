@@ -29,7 +29,11 @@
 				// Makefile:
 				"variable.language", // ($<, $@)
 				// SQL:
-				"support.function.aggregate.sql"
+				"support.function.aggregate.sql",
+				// TypeScript:
+				"keyword.operator.expression.in.ts", // for...in
+				"keyword.operator.expression.instanceof.ts",
+				"keyword.operator.expression.of.ts" // for...of
 			],
 			"settings": {
 				"foreground": "#569cd6" // (from "Dark (Visual Studio)")
@@ -43,7 +47,9 @@
 				// Assembly:
 				"support.type.register",
 				// C/C++:
-				"keyword.other.unit"
+				"keyword.other.unit",
+				// TypeScript:
+				"support.type.builtin.ts" // undefined
 			],
 			"settings": {
 				"foreground": "#b5cea8" // (from "Dark (Visual Studio)")

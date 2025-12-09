@@ -1,14 +1,14 @@
 {
 	"publisher": "theNestruo",
 	"name": "dark-minus-theme",
-	"version": "2.3.2",
+	"version": "2.3.3",
 	"preview": true,
 	"engines": {
 		"vscode": "^1.81.0"
 	},
 	"displayName": "Dark-",
 	"description": "Simplified versions of the default Dark (Visual Studio) theme, with less syntax highlight",
-	"icon": "images/icon.128.png",
+	"icon": "media/images/icon.128.png",
 	"galleryBanner": {
 		"color": "1e1e1e",
 		"theme": "dark"

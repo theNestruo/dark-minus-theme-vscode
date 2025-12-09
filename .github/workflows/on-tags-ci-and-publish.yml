@@ -1,4 +1,4 @@
-name: vsce package and publish
+name: ci and publish on tags
 
 on:
   push:

@@ -1,4 +1,4 @@
-name: vsce package and publish
+name: ci and upload nightly on main
 
 on:
   push:
