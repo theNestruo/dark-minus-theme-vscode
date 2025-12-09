@@ -1,8 +1,8 @@
-## 2.3.x
+## 2.4.0
 
-- (internal CI/CD tests)
-- Extension size and metadata improvements
 - TypeScript improvements (such as `for-of`, `instanceof`, `undefined`...)
+- Extension size and metadata improvements
+- CI/CD improvements
 
 ## 2.3.0
 
