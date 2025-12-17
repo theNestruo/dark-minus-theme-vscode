@@ -10,8 +10,6 @@
 			"name": "Keywords",
 			"scope": [
 				"keyword",
-				"constant.language",
-				"variable.language",
 				// (@see keyword.operator)
 				"keyword.operator.new",
 				"keyword.operator.expression",
@@ -37,6 +35,29 @@
 			}
 		},
 		{
+			"name": "Keywords (flow control keywords)",
+			"scope": [
+				"keyword.control",
+				// [Java]
+				"keyword.other.import.java",
+				"keyword.other.package.java",
+			],
+			"settings": {
+				"foreground": "#569cd6" // (from "Dark (Visual Studio)")
+			}
+		},
+		{
+			"name": "Keywords (constants and variables)",
+			"scope": [
+				"constant.language",
+				"variable.language",
+			],
+			"settings": {
+				"foreground": "#569cd6", // (from "Dark (Visual Studio)")
+				"fontStyle": "italic" // (additional italics)
+			}
+		},
+		{
 			"name": "Not keywords",
 			"scope": [
 				"keyword.operator",
@@ -52,30 +73,6 @@
 			],
 			"settings": {
 				"foreground": "#d4d4d4" // (restores "editor.foreground")
-			}
-		},
-		{
-			"name": "More keywords",
-			"scope": [
-				// [Assembly]
-				"keyword.mnemonic.z80asm",
-				"keyword.control.z80asm",
-				"support.type.flag.z80asm",
-				// [Batch]
-				"keyword.command.batchfile",
-				"keyword.operator.logical.batchfile", // NOT
-				"keyword.operator.pipe.batchfile", // |
-				"keyword.operator.redirection.batchfile", // < >
-				// [Markdown]
-				"punctuation.definition.heading", // #, ##, ###
-				"punctuation.definition.list.begin", // *, -
-				"punctuation.definition.link.description", // ![]()
-				"punctuation.definition.link.title", // []()
-				"punctuation.definition.metadata.markdown", // []()
-				"punctuation.definition.quote", // >
-			],
-			"settings": {
-				"foreground": "#569cd6" // (from "Dark (Visual Studio)")
 			}
 		},
 		/*
@@ -163,8 +160,35 @@
 			}
 		},
 		/*
+		 * [Assembly] ---------------------------------------------------------
+		 */
+		{
+			"name": "Assembly keywords",
+			"scope": [
+				"keyword.mnemonic.z80asm",
+				"keyword.control.z80asm",
+				"support.type.flag.z80asm",
+			],
+			"settings": {
+				"foreground": "#569cd6" // (from "Dark (Visual Studio)")
+			}
+		},
+		/*
 		 * [Batch] ------------------------------------------------------------
 		 */
+		{
+			"name": "Batch keywords",
+			"scope": [
+				"keyword.command.batchfile",
+				"keyword.control.statement.batchfile",
+				"keyword.operator.logical.batchfile", // NOT
+				"keyword.operator.pipe.batchfile", // |
+				"keyword.operator.redirection.batchfile", // < >
+			],
+			"settings": {
+				"foreground": "#569cd6" // (from "Dark (Visual Studio)")
+			}
+		},
 		{
 			"name": "Batch comments and visual noise",
 			"scope": [
@@ -180,6 +204,15 @@
 		 * [C] ----------------------------------------------------------------
 		 */
 		{
+			"name": "C Keywords (secondary)",
+			"scope": [
+				"keyword.control.directive",
+			],
+			"settings": {
+				"foreground": "#569cd6" // (from "Dark (Visual Studio)")
+			}
+		},
+		{
 			"scope": [
 				"entity.name.scope-resolution",
 				"punctuation.separator.scope-resolution",
@@ -191,10 +224,45 @@
 			}
 		},
 		/*
+		 * [Makefile] ---------------------------------------------------------
+		 */
+		{
+			"name": "Makefile keywords",
+			"scope": [
+				"variable.language.makefile",
+			],
+			"settings": {
+				"foreground": "#569cd6" // (from "Dark (Visual Studio)")
+			}
+		},
+		{
+			"name": "Makefile strings",
+			"scope": [
+				"string.interpolated.makefile",
+			],
+			"settings": {
+				"foreground": "#ce9178" // (from "Dark (Visual Studio)")
+			}
+		},
+		/*
 		 * [Markdown] ---------------------------------------------------------
 		 */
 		{
-			"name": "Markdown Strings",
+			"name": "Markdown punctuation",
+			"scope": [
+				"punctuation.definition.heading", // #, ##, ###
+				"punctuation.definition.list.begin", // *, -
+				"punctuation.definition.link.description", // ![]()
+				"punctuation.definition.link.title", // []()
+				"punctuation.definition.metadata.markdown", // []()
+				"punctuation.definition.quote", // >
+			],
+			"settings": {
+				"foreground": "#569cd6" // (from "Dark (Visual Studio)")
+			}
+		},
+		{
+			"name": "Markdown strings",
 			"scope": [
 				"markup.inline.raw.string", // `this`
 				"meta.link.inline.markdown", // [etc](this)
@@ -218,7 +286,7 @@
 			}
 		},
 		{
-			"name": "Not Markdown Strings",
+			"name": "Not Markdown strings",
 			"scope": [
 				"string.other.link.title.markdown", // [this](etc)
 			],

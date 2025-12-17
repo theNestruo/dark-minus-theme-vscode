@@ -145,8 +145,8 @@
 				"punctuation.definition.comment",
 			],
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#d4d4d480" // (50% "editor.foreground"; was "#6A9955" in "Dark (Visual Studio)")
+				"foreground": "#d4d4d480", // (50% "editor.foreground"; was "#6A9955" in "Dark (Visual Studio)")
+				"fontStyle": "italic" // (italics)
 			}
 		}
 	]
