@@ -143,13 +143,10 @@
 			"scope": [
 				"comment",
 				"punctuation.definition.comment",
-				// Batch:
-				"keyword.command.rem.batchfile", // REM
-				"keyword.operator.at.batchfile", // @
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#d4d4d480" // (50% "editor.foreground")
+				"foreground": "#d4d4d480" // (50% "editor.foreground"; was "#6A9955" in "Dark (Visual Studio)")
 			}
 		}
 	]
