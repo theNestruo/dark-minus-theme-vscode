@@ -6,6 +6,7 @@
 
 Simple dark themes, based on the default _Dark (Visual Studio)_ and _Dark Modern_ themes but with _less_ syntax highlight.
 
+
 ## Rationale
 
 These themes keeps the familiar workbench look of the _Dark (Visual Studio)_, _Dark+_, and _Dark Modern_.
@@ -13,6 +14,7 @@ These themes keeps the familiar workbench look of the _Dark (Visual Studio)_, _D
 On top of that, these themes dim the whitespace, the ruler, and the line numbers to improve the contrast with the actual code.
 
 The comments color is changed to gray from the default green.
+
 
 ## Themes
 
@@ -34,6 +36,11 @@ The _Dark--_ syntax theme highlights just comments.
 
 This syntax theme is available in the **Dark-- (Visual Studio)** workbench theme variation only.
 
+### Dark- custom
+
+Custom version with my personal preferences to improve readability and visualize structure more clearly.
+
+
 ## Screenshots
 
 ![Dark- (Visual Studio) (Flat UI)](media/images/Dark-%20(Flat%20UI).png)
@@ -44,44 +51,6 @@ This syntax theme is available in the **Dark-- (Visual Studio)** workbench theme
 
 ![Dark-- (Visual Studio)](media/images/Dark--.png)
 <br>_Theme: Dark-- (Visual Studio)_
-
-## Customizations
-
-Previous _Dark-_ versions featured some customizations over the workbench look of _Dark (Visual Studio)_ and _Dark+_ (such as a less bright status bar).
-
-Those customizations have been removed from the theme for simplicity and consistency. Users can now tweak the themes according their particular taste.
-
-### Suggestions
-
-- Restore the "classic" status bar colors when using one of the _Dark- Modern_ variations:
-
-	```json
-	"workbench.colorCustomizations": {
-		"statusBar.background": "#007acc",
-		"statusBar.debuggingBackground": "#cc6633",
-		"statusBar.foreground": "#ffffff",
-		"statusBar.noFolderBackground": "#68217a",
-		"statusBarItem.remoteBackground": "#16825d"
-	}
-	```
-
-- The status bar color from the previous versions of the _Dark-_ theme was `#0e639c` (darker than the default `#007acc`):
-
-	```json
-	"workbench.colorCustomizations": {
-		"statusBar.background": "#0e639c"
-	}
-	```
-
->	For a reference, the default status bar colors in _Dark (Visual Studio)_ and _Dark+_ are:
->
->	```json
->	"statusBar.background": "#007acc",
->	"statusBar.debuggingBackground": "#cc6633",
->	"statusBar.foreground": "#ffffff",
->	"statusBar.noFolderBackground": "#68217a",
->	"statusBarItem.remoteBackground": "#16825d"
->	```
 
 
 ## Credits

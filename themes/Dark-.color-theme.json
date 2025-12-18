@@ -4,7 +4,7 @@
 	"include": "./Dark--.color-theme.json",
 	"tokenColors": [
 		/*
-		 * Keyword ------------------------------------------------------------
+		 * Keywords -----------------------------------------------------------
 		 */
 		{
 			"name": "Keywords (flow control keywords and top level elements)",

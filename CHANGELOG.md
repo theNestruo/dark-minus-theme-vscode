@@ -1,3 +1,7 @@
+## 2.5.0
+
+- "Dark- custom" variant
+
 ## 2.4.0
 
 - TypeScript improvements (such as `for-of`, `instanceof`, `undefined`...)
