@@ -1,4 +1,7 @@
-name: ci and publish on tags
+name: CI and publish on tag
+
+permissions:
+  contents: write
 
 on:
   push:
@@ -22,6 +25,7 @@ jobs:
 
     - name: Publish to Open VSX Registry
       uses: HaaLeo/publish-vscode-extension@v2
+      id: publishToOpenVSX
       with:
         pat: ${{ secrets.OPEN_VSX_TOKEN }}
 
@@ -30,3 +34,11 @@ jobs:
       with:
         pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
         registryUrl: https://marketplace.visualstudio.com
+        extensionFile: ${{ steps.publishToOpenVSX.outputs.vsixPath }}
+
+    - name: Draft a GitHub Release
+      uses: softprops/action-gh-release@v2
+      with:
+        draft: true
+        files: ${{ steps.publishToOpenVSX.outputs.vsixPath }}
+        fail_on_unmatched_files: true

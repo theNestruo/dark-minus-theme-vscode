@@ -1,4 +1,8 @@
-name: ci and upload nightly on main
+name: CI and nightly build on main
+
+permissions:
+  contents: read
+  packages: write
 
 on:
   push:
