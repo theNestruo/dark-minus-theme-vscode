@@ -7,6 +7,36 @@
 		 * Keyword ------------------------------------------------------------
 		 */
 		{
+			"name": "Keywords (flow control keywords and top level elements)",
+			"scope": [
+				"keyword.control",
+				"keyword.operator.ternary",
+				// [JavaScript][TypeScript]
+				"storage.type.class",
+				"storage.type.function",
+				"storage.type.interface",
+			],
+			"settings": {
+				"foreground": "#569cd6" // (from "Dark (Visual Studio)")
+			}
+		},
+		{
+			"name": "Keywords (not top level elements)",
+			"scope": [
+				// [Java]
+				"keyword.other.import.java",
+				"keyword.other.package.java",
+				"meta.method.body.java storage.modifier.java",
+				// [JavaScript][TypeScript]
+				"keyword.control.import",
+				"keyword.control.type",
+				"keyword.control.from",
+			],
+			"settings": {
+				"foreground": "#569cd6" // (from "Dark (Visual Studio)")
+			}
+		},
+		{
 			"name": "Keywords",
 			"scope": [
 				"keyword",
@@ -20,11 +50,8 @@
 				"keyword.operator.alignas",
 				"keyword.operator.instanceof",
 				"keyword.operator.wordlike",
-				// [C][Java][JavaScript][TypeScript]
+				// [Java][JavaScript][TypeScript]
 				"storage.modifier",
-				"storage.type",
-				"support.type.builtin",
-				"support.type.primitive",
 				// [Python]
 				"keyword.operator.logical.python",
 				// [SQL]
@@ -35,12 +62,14 @@
 			}
 		},
 		{
-			"name": "Keywords (flow control keywords)",
+			"name": "Keywords (types declaration)",
 			"scope": [
-				"keyword.control",
-				// [Java]
-				"keyword.other.import.java",
-				"keyword.other.package.java",
+				"storage.type",
+				"storage.type.built-in.primitive",
+				"storage.type.primitive",
+				"storage.type.struct",
+				"support.type.builtin",
+				"support.type.primitive",
 			],
 			"settings": {
 				"foreground": "#569cd6" // (from "Dark (Visual Studio)")
@@ -129,7 +158,7 @@
 				"storage.type.class.jsdoc",
 			],
 			"settings": {
-				"foreground": "#d4d4d4c0", // (halfway between editor.foreground and comment)
+				"foreground": "#d4d4d4a0", // ($a0 opacity of editor.foreground)
 				"fontStyle": "italic" // (additional italics)
 			}
 		},
@@ -204,7 +233,7 @@
 		 * [C] ----------------------------------------------------------------
 		 */
 		{
-			"name": "C Keywords (secondary)",
+			"name": "C Keywords",
 			"scope": [
 				"keyword.control.directive",
 			],
@@ -308,6 +337,21 @@
 				"storage.type.generic.java",
 				"storage.type.generic.wildcard.java",
 				"punctuation.bracket.angle.java",
+			],
+			"settings": {
+				"foreground": "#d4d4d4c0", // (halfway between editor.foreground and comment)
+				"fontStyle": "italic" // (additional italics)
+			}
+		},
+		/*
+		 * [TypeScript] -------------------------------------------------------
+		 */
+		{
+			"name": "TypeScript generics",
+			"scope": [
+				// [TypeScript] Generics:
+				"meta.type.parameters.ts",
+				"meta.type.parameters.ts storage.modifier.ts",
 			],
 			"settings": {
 				"foreground": "#d4d4d4c0", // (halfway between editor.foreground and comment)
