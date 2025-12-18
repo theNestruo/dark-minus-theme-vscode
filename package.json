@@ -2,7 +2,6 @@
 	"publisher": "theNestruo",
 	"name": "dark-minus-theme",
 	"version": "2.5.0",
-	"preview": true,
 	"engines": {
 		"vscode": "^1.81.0"
 	},
