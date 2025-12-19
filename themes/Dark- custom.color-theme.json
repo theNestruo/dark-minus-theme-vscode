@@ -120,6 +120,7 @@
 				"meta.template.expression",
 				// RegExp
 				"keyword.control.anchor.regexp",
+				"keyword.operator.or.regexp",
 				"keyword.operator.quantifier.regexp",
 				"punctuation.definition.character-class.regexp",
 				"punctuation.definition.group.regexp",
