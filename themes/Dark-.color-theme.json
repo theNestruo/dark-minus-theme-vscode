@@ -137,7 +137,7 @@
 		 * Strings and RegExps ------------------------------------------------
 		 */
 		{
-			"name": "Strings",
+			"name": "Strings and RegExps",
 			"scope": [
 				"string",
 				"punctuation.definition.string",

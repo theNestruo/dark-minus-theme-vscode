@@ -102,23 +102,25 @@
 		 * Strings and RegExps ------------------------------------------------
 		 */
 		{
-			"name": "Strings",
+			"name": "Strings and RegExps",
 			"scope": [
 				"string",
 				"punctuation.definition.string",
+				// (keeps escaped characters within RegExps highlighted)
+				"string.regexp constant.character.escape",
 			],
 			"settings": {
 				"foreground": "#b5cea8" // (same as constants and numbers)
 			}
 		},
 		{
-			"name": "Strings: non-printable elements",
+			"name": "Strings and RegExps: non-printable elements",
 			"scope": [
 				"constant.character.escape",
-				// Placeholders and string templates
-				"constant.other.placeholder",
-				"meta.template.expression",
-				// RegExp
+				// Within Strings:
+				"constant.other.placeholder", // (placeholders)
+				"meta.template.expression", // (string templates)
+				// Within RegExps:
 				"keyword.control.anchor.regexp",
 				"keyword.operator.or.regexp",
 				"keyword.operator.quantifier.regexp",
