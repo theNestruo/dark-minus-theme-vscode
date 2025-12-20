@@ -1,3 +1,8 @@
+## 2.5.1
+
+- Fixes escaped characters within RegExps
+- Fixes expressions within string templates
+
 ## 2.5.0
 
 - "Dark- custom" variant

@@ -120,6 +120,10 @@
 				// Within Strings:
 				"constant.other.placeholder", // (placeholders)
 				"meta.template.expression", // (string templates)
+				"meta.template.expression keyword.operator",
+				"meta.template.expression constant.language",
+				"meta.template.expression constant.numeric",
+				"meta.template.expression variable.language",
 				// Within RegExps:
 				"keyword.control.anchor.regexp",
 				"keyword.operator.or.regexp",
