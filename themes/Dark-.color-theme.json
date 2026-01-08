@@ -244,12 +244,19 @@
 		{
 			"scope": [
 				"entity.name.scope-resolution",
-				"punctuation.separator.scope-resolution",
 				"support.other.attribute.cpp",
 			],
 			"settings": {
 				"foreground": "#d4d4d4c0", // (halfway between editor.foreground and comment)
 				"fontStyle": "italic" // (additional italics)
+			}
+		},
+		{
+			"scope": [
+				"punctuation.separator.scope-resolution",
+			],
+			"settings": {
+				"foreground": "#d4d4d4c0" // (halfway between editor.foreground and comment)
 			}
 		},
 		/*

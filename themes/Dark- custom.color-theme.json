@@ -110,7 +110,8 @@
 				"string.regexp constant.character.escape",
 			],
 			"settings": {
-				"foreground": "#b5cea8" // (same as constants and numbers)
+				"foreground": "#b5cea8", // (same as constants and numbers)
+				"fontStyle": ""
 			}
 		},
 		{
@@ -132,7 +133,8 @@
 				"punctuation.definition.group.regexp",
 			],
 			"settings": {
-				"foreground": "#ce9178a0" // ($a0 opacity of original "#ce9178")
+				"foreground": "#ce9178a0", // ($a0 opacity of original "#ce9178")
+				"fontStyle": ""
 			}
 		},
 		/*
@@ -144,7 +146,8 @@
 				"constant.character.escape.continuation", // \
 			],
 			"settings": {
-				"foreground": "#d4d4d480" // (same as comment)
+				"foreground": "#d4d4d480", // (same as comment)
+				"fontStyle": ""
 			}
 		},
 		/*
@@ -153,10 +156,22 @@
 		{
 			"name": "C: Reduce visual noise",
 			"scope": [
-				"punctuation.separator.pointer-access.c" // ->
+				"punctuation.separator.pointer-access.c", // ->
+				"punctuation.separator.scope-resolution", // ::
 			],
 			"settings": {
 				"foreground": "#d4d4d4a0", // ($a0 opacity of editor.foreground)
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "C: Reduce visual noise",
+			"scope": [
+				"support.other.attribute.cpp",
+			],
+			"settings": {
+				"foreground": "#d4d4d4a0", // ($a0 opacity of editor.foreground)
+				"fontStyle": "italic" // (additional italics)
 			}
 		},
 		/*
@@ -171,6 +186,7 @@
 			],
 			"settings": {
 				"foreground": "#d4d4d4a0", // ($a0 opacity of editor.foreground)
+				"fontStyle": ""
 			}
 		},
 		/*
@@ -192,7 +208,8 @@
 				"punctuation.definition.string.end.yaml",
 			],
 			"settings": {
-				"foreground": "#ce9178" // (restores original string)
+				"foreground": "#ce9178", // (restores original string)
+				"fontStyle": ""
 			}
 		},
 		{
@@ -210,6 +227,7 @@
 			],
 			"settings": {
 				"foreground": "#d4d4d4a0", // ($a0 opacity of editor.foreground)
+				"fontStyle": ""
 			}
 		},
 		/*
@@ -222,7 +240,8 @@
 				"punctuation.definition.heading.markdown",
 			],
 			"settings": {
-				"foreground": "#f5f5f5"
+				"foreground": "#f5f5f5",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -231,7 +250,8 @@
 				"string.other.link.title.markdown",
 			],
 			"settings": {
-				"foreground": "#b5cea8" // (same as constants and numbers)
+				"foreground": "#b5cea8", // (same as constants and numbers)
+				"fontStyle": ""
 			}
 		},
 		{
@@ -241,7 +261,8 @@
 				"meta.image.inline.markdown", // ![etc](this)
 			],
 			"settings": {
-				"foreground": "#569cd6c0" // ($c0 opacity of keyword)
+				"foreground": "#569cd6c0", // ($c0 opacity of keyword)
+				"fontStyle": ""
 			}
 		},
 		{
@@ -258,7 +279,8 @@
 				"punctuation.separator.table.markdown", // :--
 			],
 			"settings": {
-				"foreground": "#d4d4d480" // (same as comment)
+				"foreground": "#d4d4d480", // (same as comment)
+				"fontStyle": ""
 			}
 		},
 	]
