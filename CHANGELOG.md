@@ -2,6 +2,7 @@
 
 - Fixes escaped characters within RegExps
 - Fixes expressions within string templates
+- Reduce visual noise (C)
 
 ## 2.5.0
 
