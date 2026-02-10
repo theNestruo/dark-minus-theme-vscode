@@ -340,6 +340,7 @@
 				"storage.type.annotation.java",
 				"punctuation.definition.annotation.java",
 				"punctuation.definition.annotation-arguments",
+				"constant.other.key.java",
 				// [Java] Generics:
 				"storage.type.generic.java",
 				"storage.type.generic.wildcard.java",

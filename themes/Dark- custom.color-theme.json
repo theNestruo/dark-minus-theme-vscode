@@ -175,6 +175,18 @@
 			}
 		},
 		/*
+		 * [Java] -------------------------------------------------------------
+		 */
+		{
+			"name": "Java: Reduce visual noise",
+			"scope": [
+				"punctuation.definition.parameters.varargs.java",
+			],
+			"settings": {
+				"foreground": "#d4d4d4a0" // ($a0 opacity of editor.foreground)
+			}
+		},
+		/*
 		 * [JavaScript][TypeScript] -------------------------------------------
 		 */
 		{
