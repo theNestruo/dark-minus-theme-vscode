@@ -129,6 +129,110 @@
 				"fontStyle": "strikethrough"
 			}
 		},
+		{
+			"name": "Italic+Strikethrough",
+			"scope": [
+				"markup.italic markup.strikethrough",
+				"markup.strikethrough markup.italic"
+			],
+			"settings": {
+				"fontStyle": "italic strikethrough"
+			}
+		},
+		{
+			"name": "Bold+Strikethrough",
+			"scope": [
+				"markup.bold markup.strikethrough",
+				"markup.strikethrough markup.bold"
+			],
+			"settings": {
+				"fontStyle": "bold strikethrough"
+			}
+		},
+		{
+			"name": "Italic+Bold+Strikethrough",
+			"scope": [
+				"markup.italic markup.bold markup.strikethrough",
+				"markup.bold markup.italic markup.strikethrough",
+				"markup.italic markup.strikethrough markup.bold",
+				"markup.bold markup.strikethrough markup.italic",
+				"markup.strikethrough markup.italic markup.bold",
+				"markup.strikethrough markup.bold markup.italic",
+			],
+			"settings": {
+				"fontStyle": "italic bold strikethrough"
+			}
+		},
+		{
+			"name": "Underline+Strikethrough",
+			"scope": [
+				"markup.underline markup.strikethrough",
+				"markup.strikethrough markup.underline"
+			],
+			"settings": {
+				"fontStyle": "underline strikethrough"
+			}
+		},
+		{
+			"name": "Italic+Underline+Strikethrough",
+			"scope": [
+				"markup.italic markup.underline markup.strikethrough",
+				"markup.underline markup.italic markup.strikethrough",
+				"markup.italic markup.strikethrough markup.underline",
+				"markup.underline markup.strikethrough markup.italic",
+				"markup.strikethrough markup.italic markup.underline",
+				"markup.strikethrough markup.underline markup.italic"
+			],
+			"settings": {
+				"fontStyle": "italic underline strikethrough"
+			}
+		},
+		{
+			"name": "Bold+Underline+Strikethrough",
+			"scope": [
+				"markup.bold markup.underline markup.strikethrough",
+				"markup.underline markup.bold markup.strikethrough",
+				"markup.bold markup.strikethrough markup.underline",
+				"markup.underline markup.strikethrough markup.bold",
+				"markup.strikethrough markup.bold markup.underline",
+				"markup.strikethrough markup.underline markup.bold"
+			],
+			"settings": {
+				"fontStyle": "bold underline strikethrough"
+			}
+		},
+		{
+			"name": "Italic+Bold+Underline+Strikethrough",
+			"scope": [
+				"markup.italic markup.bold markup.underline markup.strikethrough",
+				"markup.italic markup.underline markup.bold markup.strikethrough",
+				"markup.bold markup.italic markup.underline markup.strikethrough",
+				"markup.underline markup.italic markup.bold markup.strikethrough",
+				"markup.bold markup.underline markup.italic markup.strikethrough",
+				"markup.underline markup.bold markup.italic markup.strikethrough",
+				"markup.italic markup.bold markup.strikethrough markup.underline",
+				"markup.italic markup.underline markup.strikethrough markup.bold",
+				"markup.bold markup.italic markup.strikethrough markup.underline",
+				"markup.underline markup.italic markup.strikethrough markup.bold",
+				"markup.bold markup.underline markup.strikethrough markup.italic",
+				"markup.underline markup.bold markup.strikethrough markup.italic",
+				"markup.italic markup.strikethrough markup.bold markup.underline",
+				"markup.italic markup.strikethrough markup.underline markup.bold",
+				"markup.bold markup.strikethrough markup.italic markup.underline",
+				"markup.underline markup.strikethrough markup.italic markup.bold",
+				"markup.bold markup.strikethrough markup.underline markup.italic",
+				"markup.underline markup.strikethrough markup.bold markup.italic",
+				"markup.strikethrough markup.italic markup.bold markup.underline",
+				"markup.strikethrough markup.italic markup.underline markup.bold",
+				"markup.strikethrough markup.bold markup.italic markup.underline",
+				"markup.strikethrough markup.underline markup.italic markup.bold",
+				"markup.strikethrough markup.bold markup.underline markup.italic",
+				"markup.strikethrough markup.underline markup.bold markup.italic",
+			],
+			"settings": {
+				"fontStyle": "italic bold underline strikethrough"
+			}
+		},
 
 		// Colors:
 		{
