@@ -1,6 +1,11 @@
+## 2.6.0
+
+- "Dark- custom" variant rewritten
+
 ## 2.5.2
 
 - Minor improvements
+- Fixes strikethrough
 
 ## 2.5.1
 

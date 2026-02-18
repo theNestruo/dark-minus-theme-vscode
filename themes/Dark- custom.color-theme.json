@@ -1,15 +1,40 @@
 {
 	"$schema": "vscode://schemas/color-theme",
 	"name": "Dark- custom",
-	"include": "./Dark- (Flat UI).color-theme.json",
 	"colors": {
 		/*
-		 * Editor
+		 * Clones "Dark (Visual Studio)" workbench style partially
+		 * (https://github.com/microsoft/vscode/blob/main/extensions/theme-defaults/themes/dark_vs.json)
 		 */
 
-		// Slightly darker editor
-		"editor.background": "#181818",
-		"editor.foreground": "#D4D4D4",
+		"checkbox.border": "#6B6B6B",
+		"editor.inactiveSelectionBackground": "#3A3D41",
+		"editorIndentGuide.background1": "#404040",
+		"editorIndentGuide.activeBackground1": "#707070",
+		"editor.selectionHighlightBackground": "#ADD6FF26",
+		"list.dropBackground": "#383B3D",
+		"sideBarTitle.foreground": "#BBBBBB",
+		"input.placeholderForeground": "#A6A6A6",
+		"menu.background": "#252526",
+		"menu.foreground": "#CCCCCC",
+		"menu.separatorBackground": "#454545",
+		"menu.border": "#454545",
+		"menu.selectionBackground": "#0078d4",
+		"statusBarItem.remoteForeground": "#FFF",
+		"ports.iconRunningProcessForeground": "#369432",
+		"tab.selectedBackground": "#222222",
+		"tab.selectedForeground": "#ffffffa0",
+		"list.activeSelectionIconForeground": "#FFF",
+		"terminal.inactiveSelectionBackground": "#3A3D41",
+		"widget.border": "#303031",
+		"actionBar.toggledBackground": "#383a49",
+
+		/*
+		 * Customized editor
+		 */
+
+		"editor.background": "#181818", // Slightly darker editor
+		"editor.foreground": "#d4d4d4", // Slightly darker editor
 		"editor.lineHighlightBackground": "#1e1e1e",
 		"editor.lineHighlightBorder": "#0000",
 
@@ -24,11 +49,14 @@
 		"editorInlayHint.background": "#07314e", // (50% statusBar.background)
 		"editorInlayHint.foreground": "#dedede", // (50% #bebebe + 50% #ffffff)
 
+		// More visible errors
+		"editorError.background": "#f14c4c60", // (60 opacity of default editorError.foreground: #f14c4c)
+		"editorWarning.background": "#cca70060", // (60 opacity of default editorWarning.foreground: #cca700)
+
 		/*
-		 * Workbench
+		 * Customized workbench
 		 */
 
-		// Slightly darker workbench
 		"titleBar.activeBackground": "#1e1e1e",
 		"titleBar.inactiveBackground": "#1e1e1e",
 		"activityBar.background": "#1e1e1e",
@@ -43,10 +71,21 @@
 		"tab.border": "#0000",
 		"tab.lastPinnedBorder": "#454545",
 		"panel.background": "#1e1e1e",
+		// "listFilterWidget.background": "#252526", // ???
+		// "quickInput.background": "#252526", // ???
+
+		// Few borders to improve readability:
+		"editorGroup.border": "#454545",
+		"panel.border": "#454545",
+		"sideBarSectionHeader.border": "#454545",
 
 		// Active/accent colors:
 		"activityBarBadge.background": "#0e639c", // (same as badge.background)
+		"badge.background": "#0e639c",
 		"editorWidget.resizeBorder": "#0e639c", // (same as badge.background)
+		"panelTitle.activeBorder": "#0098ff",
+		"tab.activeBorderTop": "#0098ff",
+		"terminal.tab.activeBorder": "#0098ff",
 
 		// Restores the "classic" status bar colors:
 		"statusBar.background": "#0e639c", // (darker and less intense than default "#007acc")
@@ -57,10 +96,10 @@
 		"statusBarItem.remoteBackground": "#16825d",
 
 		/*
-		 * Terminal
+		 * Customized terminal
 		 */
 
-		 // Ottosson
+		// Clones "Ottosson"
 		// (https://github.com/microsoft/terminal/blob/main/src/cascadia/TerminalSettingsModel/defaults.json#L107)
 		"terminal.background": "#000000",
 		"terminal.foreground": "#bebebe",
@@ -85,214 +124,328 @@
 	"semanticHighlighting": false,
 	"tokenColors": [
 		/*
+		 * Typography ---------------------------------------------------------
+		 */
+		{
+			"scope": [
+				"markup.italic",
+				"emphasis"
+			],
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [
+				"markup.bold",
+				"strong"
+			],
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "markup.underline",
+			"settings": {
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"scope": "markup.strikethrough",
+			"settings": {
+				"fontStyle": "strikethrough"
+			}
+		},
+
+		/*
 		 * Keywords -----------------------------------------------------------
 		 */
 		{
-			"name": "Keywords (constants and variables)",
+			"name": "Keywords",
 			"scope": [
-				"constant.language",
-				"variable.language",
+				"keyword",
+				"storage.modifier",
+				"storage.type", // (e.g.: int, class, ...)
+				"support.type", // (e.g.: undefined, number, ...)
+				"variable.language", // (e.g.: this)
+				// [HTML][XML]
+				"entity.name.tag",
+				"punctuation.definition.tag",
 			],
 			"settings": {
-				"foreground": "#b5cea8", // (same as constants and numbers)
-				"fontStyle": "italic" // (additional italics)
+				"foreground": "#a1b2d4" // (blueish)
 			}
 		},
+		{
+			"name": "Not keywords",
+			"scope": [
+				"keyword.operator",
+				// [C][C++]
+				"entity.name.type.struct",
+				// [Java]
+				"storage.modifier.package.java", // (text after "package")
+				"storage.modifier.import.java", // (text after "import")
+				"storage.type.java", // (class names)
+				// [JSON]
+				"support.type.property-name.json",
+				// [YAML]
+				"entity.name.tag.yaml",
+			],
+			"settings": {
+				"foreground": "#d4d4d4" // (restores editor.foreground)
+			}
+		},
+		{
+			"name": "Not not keywords",
+			"scope": [
+				"keyword.operator.expression.of", // (for..of)
+				"keyword.operator.expression.in", // (for..in)
+				"keyword.operator.new", // (new)
+			],
+			"settings": {
+				"foreground": "#a1b2d4" // (restores keyword)
+			}
+		},
+
 		/*
-		 * Strings and RegExps ------------------------------------------------
+		 * Constants ----------------------------------------------------------
 		 */
 		{
-			"name": "Strings and RegExps",
+			"name": "Constants",
 			"scope": [
+				"constant",
+				"support.constant",
+			],
+			"settings": {
+				"foreground": "#a5d4b5", // (greenish)
+			}
+		},
+		{
+			"name": "Visual noise around constants",
+			"scope": [
+				"keyword.other.unit", // (e.g.: 1rem, 1px)
+				"punctuation.definition.constant", // (e.g.: #rrggbb)
+			],
+			"settings": {
+				"foreground": "#81b492", // (darker version of constant)
+			}
+		},
+
+		/*
+		 * Strings ------------------------------------------------------------
+		 */
+		{
+			"name": "Srings and Regexps",
+			"scope": [
+				// Strings
 				"string",
-				"punctuation.definition.string",
-				// (keeps escaped characters within RegExps highlighted)
-				"string.regexp constant.character.escape",
+				// Regexps
+				"string.regexp constant", // (not a constant)
+				// [CSS]
+				"meta.function.url string punctuation",
+				// [HTML]
+				"meta.attribute.href string punctuation",
+				"meta.attribute.src string punctuation",
+				// [Markdown]
+				"markup.inline.raw.string",
 			],
 			"settings": {
-				"foreground": "#b5cea8", // (same as constants and numbers)
-				"fontStyle": ""
+				"foreground": "#e4d4a5", // (orangeish)
 			}
 		},
 		{
-			"name": "Strings and RegExps: non-printable elements",
+			"name": "Strings and Regexps: non-printable characters",
 			"scope": [
-				"constant.character.escape",
-				// Within Strings:
-				"constant.other.placeholder", // (placeholders)
-				"meta.template.expression", // (string templates)
-				"meta.template.expression keyword.operator",
-				"meta.template.expression constant.language",
-				"meta.template.expression constant.numeric",
-				"meta.template.expression variable.language",
-				// Within RegExps:
-				"keyword.control.anchor.regexp",
-				"keyword.operator.or.regexp",
-				"keyword.operator.quantifier.regexp",
-				"punctuation.definition.character-class.regexp",
-				"punctuation.definition.group.regexp",
+				// Strings
+				"string constant.character.escape", // (e.g.: \t)
+				"string constant.other.placeholder", // (e.g.: %s)
+				"string.template meta.template.expression", // (e.g.: `${text}`)
+				// Regexps
+				"string.regexp punctuation",
+				"string.regexp keyword", // (not a keyword)
+				"string.regexp keyword.operator", // (not a keyword.operator)
+				// [HTML]
+				"constant.character.entity.named.nbsp",
+				// [Markdown]
+				"punctuation.definition.markdown", // ```
+				"punctuation.definition.raw.markdown" // `
 			],
 			"settings": {
-				"foreground": "#ce9178a0", // ($a0 opacity of original "#ce9178")
-				"fontStyle": ""
+				"foreground": "#a49465", // (darker version of string)
 			}
 		},
+		{
+			"name": "Not strings, visible",
+			"scope": [
+				// [Markdown]
+				"string.other.link.title.markdown", // text in [text](link)
+			],
+			"settings": {
+				"foreground": "#d4d4d4" // (restores editor.foreground)
+			}
+		},
+		{
+			"name": "Not strings, non visible",
+			"scope": [
+				// [Markdown]
+				"string.other.link.description.markdown", // alt in ![alt](img)
+			],
+			"settings": {
+				"foreground": "#a5a5a5"
+			}
+		},
+		{
+			"name": "Visual noise around not strings",
+			"scope": [
+				// [Markdown]
+				"punctuation.definition.link.title", // [] in [text](link)
+				"punctuation.definition.link.description", // [] in ![alt](img)
+			],
+			"settings": {
+				"foreground": "#767676",
+			}
+		},
+		{
+			"name": "Special strings (links)",
+			"scope": [
+				// [CSS]
+				"meta.function.url string",
+				// [HTML]
+				"meta.attribute.href string",
+				"meta.attribute.src string",
+				// [Markdown]
+				"markup.underline.link.markdown", // img in ![alt](img)
+				"markup.underline.link.image.markdown", // link in [text](link)
+			],
+			"settings": {
+				"foreground": "#a1b2d4" // (blueish)
+			}
+		},
+		{
+			"name": "Visual noise around special strings (links)",
+			"scope": [
+				"meta.image.inline.markdown", // () in ![alt](img)
+				"meta.link.inline.markdown", // () in [text](link)
+			],
+			"settings": {
+				"foreground": "#7182a4" // (darker version of keyword)
+			}
+		},
+
 		/*
-		 * Reduce visual noise ------------------------------------------------
+		 * Comments -----------------------------------------------------------
 		 */
 		{
-			"name": "Reduce visual noise",
+			"name": "Comments",
+			"scope": [
+				"comment",
+				// [Batch]
+				"keyword.command.rem", // REM
+			],
+			"settings": {
+				"foreground": "#767676",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Special comments",
+			"scope": [
+				"keyword.other.documentation.javadoc", // Javadoc
+				"storage.type.class.jsdoc", // JSDoc
+			],
+			"settings": {
+				"foreground": "#767676",
+				"fontStyle": "italic bold"
+			}
+		},
+
+		/*
+		 * Highlights ---------------------------------------------------------
+		 */
+		{
+			"name": "Highlights",
+			"scope": [
+				// [Markdown]
+				"entity.name.section.markdown", // # text, ## text, ### text
+				"punctuation.definition.heading.markdown", // #, ##, ###
+			],
+			"settings": {
+				"foreground": "#f2f2f2"
+			}
+		},
+
+		/*
+		 * Annotations --------------------------------------------------------
+		 */
+		{
+			"name": "Annotations, scope resolution, etc.",
+			"scope": [
+				"meta.declaration.annotation",
+				"meta.declaration.annotation constant.other.key", // (not a constant)
+				"meta.declaration.annotation keyword.operator.assignment", // (not a keyword)
+				"meta.declaration.annotation storage.type", // (not an storage.type)
+				// [C]
+				"entity.name.scope-resolution", // text::
+				"punctuation.separator.namespace.access.cpp", // ::
+				"support.other.attribute.cpp", // [[text]]
+				// [Java]
+				"punctuation.bracket.angle.java",
+				"storage.type.generic",
+				"meta.definition.variable.java storage.modifier.extends.java",
+				"meta.definition.variable.java storage.modifier.super.java",
+				// [Markdown]
+				"fenced_code.block.language",
+				// [TypeScript]
+				"entity.name.type.module",
+				"meta.type.annotation punctuation.accessor",
+				// [XML]
+				"entity.other.attribute-name.namespace",
+				"punctuation.separator.namespace.xml",
+			],
+			"settings": {
+				"foreground": "#a5a5a5",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Visual noise, dimmed",
+			"scope": [
+				// [Batch]
+				"keyword.operator.at.batchfile", // @
+				// [C][c++]
+				"punctuation.separator.pointer-access", // ->
+				"punctuation.separator.scope-resolution", // ::
+				"storage.modifier.reference.cpp", // &
+				// [Java]
+				"punctuation.definition.parameters.varargs.java", // ...
+				// [JavaScript][TypeScript]
+				"keyword.operator.spread", // ?.
+				"keyword.operator.optional", // ?:
+				"punctuation.accessor.optional", // ?.
+				// [Markdown]
+				"meta.separator.markdown", // ---
+				"punctuation.definition.bold.markdown", // **text**
+				"punctuation.definition.italic.markdown", // _text_
+				"markup.list.unnumbered.markdown punctuation.definition.list.begin", // *, -
+				"punctuation.definition.quote", // >
+				"punctuation.definition.table.markdown", // |
+				"punctuation.separator.table.markdown", // :---:
+			],
+			"settings": {
+				"foreground": "#a5a5a5",
+			}
+		},
+
+		/*
+		 * Visual noise -------------------------------------------------------
+		 */
+		{
+			"name": "Visual noise, fainted",
 			"scope": [
 				"constant.character.escape.continuation", // \
 			],
 			"settings": {
-				"foreground": "#d4d4d480", // (same as comment)
-				"fontStyle": ""
-			}
-		},
-		/*
-		 * [C] ----------------------------------------------------------------
-		 */
-		{
-			"name": "C: Reduce visual noise",
-			"scope": [
-				"punctuation.separator.pointer-access.c", // ->
-				"punctuation.separator.scope-resolution", // ::
-			],
-			"settings": {
-				"foreground": "#d4d4d4a0", // ($a0 opacity of editor.foreground)
-				"fontStyle": ""
-			}
-		},
-		{
-			"name": "C: Reduce visual noise",
-			"scope": [
-				"support.other.attribute.cpp",
-			],
-			"settings": {
-				"foreground": "#d4d4d4a0", // ($a0 opacity of editor.foreground)
-				"fontStyle": "italic" // (additional italics)
-			}
-		},
-		/*
-		 * [Java] -------------------------------------------------------------
-		 */
-		{
-			"name": "Java: Reduce visual noise",
-			"scope": [
-				"punctuation.definition.parameters.varargs.java",
-			],
-			"settings": {
-				"foreground": "#d4d4d4a0" // ($a0 opacity of editor.foreground)
-			}
-		},
-		/*
-		 * [JavaScript][TypeScript] -------------------------------------------
-		 */
-		{
-			"name": "JS/TS: Reduce visual noise",
-			"scope": [
-				"keyword.operator.optional", // ?
-				"keyword.operator.type.annotation", // :
-				"punctuation.accessor.optional", // ?.
-			],
-			"settings": {
-				"foreground": "#d4d4d4a0", // ($a0 opacity of editor.foreground)
-				"fontStyle": ""
-			}
-		},
-		/*
-		 * [JSON][YAML] -------------------------------------------------------
-		 */
-		{
-			"name": "JSON/YAML strings",
-			"scope": [
-				// [JSON]
-				"string.quoted.double.json",
-				"punctuation.definition.string.begin.json",
-				"punctuation.definition.string.end.json",
-				// [YAML]
-				"string.quoted.double.yaml",
-				"string.quoted.single.yaml",
-				"string.unquoted.block.yaml",
-				"string.unquoted.plain.out.yaml",
-				"punctuation.definition.string.begin.yaml",
-				"punctuation.definition.string.end.yaml",
-			],
-			"settings": {
-				"foreground": "#ce9178", // (restores original string)
-				"fontStyle": ""
-			}
-		},
-		{
-			"name": "JSON/YAML: Reduce visual noise",
-			"scope": [
-				// [JSON]
-				"punctuation.separator.dictionary.key-value.json",
-				"punctuation.separator.dictionary.pair.json.comments",
-				"punctuation.support.type.property-name.begin.json",
-				"punctuation.support.type.property-name.end.json",
-				// [YAML]
-				"keyword.control.flow.block-scalar.literal.yaml",
-				"punctuation.definition.block.sequence.item.yaml",
-				"punctuation.separator.map.value.yaml",
-			],
-			"settings": {
-				"foreground": "#d4d4d4a0", // ($a0 opacity of editor.foreground)
-				"fontStyle": ""
-			}
-		},
-		/*
-		 * [Markdown] ---------------------------------------------------------
-		 */
-		{
-			"name": "Markdown top level elements",
-			"scope": [
-				"entity.name.section.markdown", // # this
-				"punctuation.definition.heading.markdown",
-			],
-			"settings": {
-				"foreground": "#f5f5f5",
-				"fontStyle": ""
-			}
-		},
-		{
-			"name": "Markdown special strings: links",
-			"scope": [
-				"string.other.link.title.markdown",
-			],
-			"settings": {
-				"foreground": "#b5cea8", // (same as constants and numbers)
-				"fontStyle": ""
-			}
-		},
-		{
-			"name": "String special strings: actual links",
-			"scope": [
-				"meta.link.inline.markdown", // [etc](this)
-				"meta.image.inline.markdown", // ![etc](this)
-			],
-			"settings": {
-				"foreground": "#569cd6c0", // ($c0 opacity of keyword)
-				"fontStyle": ""
-			}
-		},
-		{
-			"name": "Markdown: Reduce visual noise",
-			"scope": [
-				"meta.separator.markdown", // ---
-				"punctuation.definition.list.begin", // *, -
-				"punctuation.definition.link.description", // ![]()
-				"punctuation.definition.link.title", // []()
-				"punctuation.definition.markdown", // ```text```
-				"punctuation.definition.metadata.markdown", // []()
-				"punctuation.definition.quote", // >
-				"punctuation.definition.table.markdown", // |
-				"punctuation.separator.table.markdown", // :--
-			],
-			"settings": {
-				"foreground": "#d4d4d480", // (same as comment)
-				"fontStyle": ""
+				"foreground": "#767676",
 			}
 		},
 	]
