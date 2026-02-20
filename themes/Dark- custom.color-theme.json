@@ -168,12 +168,16 @@
 				"storage.type", // (e.g.: int, class, ...)
 				"support.type", // (e.g.: undefined, number, ...)
 				"variable.language", // (e.g.: this)
-				// [HTML][XML]
-				"entity.name.tag",
-				"punctuation.definition.tag",
+				// [HTML]
+				"entity.name.tag.html",
+				"punctuation.definition.tag.begin.html",
+				"punctuation.definition.tag.end.html",
+				// [XML]
+				"entity.name.tag.localname.xml",
+				"punctuation.definition.tag.xml",
 			],
 			"settings": {
-				"foreground": "#a1b2d4" // (blueish)
+				"foreground": "#7cbcde" // (darker version of default "entity.other.attribute-name": -#202020)
 			}
 		},
 		{
@@ -203,7 +207,7 @@
 				"keyword.operator.new", // (new)
 			],
 			"settings": {
-				"foreground": "#a1b2d4" // (restores keyword)
+				"foreground": "#7cbcde" // (darker version of default "entity.other.attribute-name": -#202020)
 			}
 		},
 
@@ -217,7 +221,16 @@
 				"support.constant",
 			],
 			"settings": {
-				"foreground": "#a5d4b5", // (greenish)
+				"foreground": "#b5cea8", // (default "constant.numeric")
+			}
+		},
+		{
+			"name": "Constants (JSON)",
+			"scope": [
+				"constant.language.json", // (to tell apart from numbers and strings)
+			],
+			"settings": {
+				"foreground": "#7cbcde" // (same as keyword)
 			}
 		},
 		{
@@ -227,7 +240,7 @@
 				"punctuation.definition.constant", // (e.g.: #rrggbb)
 			],
 			"settings": {
-				"foreground": "#81b492", // (darker version of constant)
+				"foreground": "#95ae88", // (darker version of default "constant.numeric": -#202020)
 			}
 		},
 
@@ -250,7 +263,19 @@
 				"markup.inline.raw.string",
 			],
 			"settings": {
-				"foreground": "#e4d4a5", // (orangeish)
+				"foreground": "#b5cea8", // (default "constant.numeric")
+			}
+		},
+		{
+			"name": "Strings (JSON and YAML)",
+			"scope": [
+				"string.quoted.double.json", // (to tell apart from constants and strings)
+				"string.quoted.double.yaml", // (to tell apart from constants and strings)
+				"string.quoted.single.yaml", // (to tell apart from constants and strings)
+				"string.unquoted.yaml", // (to tell apart from constants and strings)
+			],
+			"settings": {
+				"foreground": "#eeb198" // (lighter version of default "string": +#202020)
 			}
 		},
 		{
@@ -268,10 +293,10 @@
 				"constant.character.entity.named.nbsp",
 				// [Markdown]
 				"punctuation.definition.markdown", // ```
-				"punctuation.definition.raw.markdown" // `
+				"punctuation.definition.raw.markdown", // `
 			],
 			"settings": {
-				"foreground": "#a49465", // (darker version of string)
+				"foreground": "#ce9178" // (default "string")
 			}
 		},
 		{
@@ -291,7 +316,7 @@
 				"string.other.link.description.markdown", // alt in ![alt](img)
 			],
 			"settings": {
-				"foreground": "#a5a5a5"
+				"foreground": "#a2a2a7"
 			}
 		},
 		{
@@ -302,7 +327,7 @@
 				"punctuation.definition.link.description", // [] in ![alt](img)
 			],
 			"settings": {
-				"foreground": "#767676",
+				"foreground": "#71717a",
 			}
 		},
 		{
@@ -318,7 +343,7 @@
 				"markup.underline.link.image.markdown", // link in [text](link)
 			],
 			"settings": {
-				"foreground": "#a1b2d4" // (blueish)
+				"foreground": "#569cd6" // (default "keyword")
 			}
 		},
 		{
@@ -328,7 +353,7 @@
 				"meta.link.inline.markdown", // () in [text](link)
 			],
 			"settings": {
-				"foreground": "#7182a4" // (darker version of keyword)
+				"foreground": "#367cb6" // (darker version of default "keyword": -#202020)
 			}
 		},
 
@@ -343,7 +368,7 @@
 				"keyword.command.rem", // REM
 			],
 			"settings": {
-				"foreground": "#767676",
+				"foreground": "#71717a",
 				"fontStyle": "italic"
 			}
 		},
@@ -354,7 +379,7 @@
 				"storage.type.class.jsdoc", // JSDoc
 			],
 			"settings": {
-				"foreground": "#767676",
+				"foreground": "#71717a",
 				"fontStyle": "italic bold"
 			}
 		},
@@ -370,7 +395,7 @@
 				"punctuation.definition.heading.markdown", // #, ##, ###
 			],
 			"settings": {
-				"foreground": "#f2f2f2"
+				"foreground": "#fcfcff"
 			}
 		},
 
@@ -399,11 +424,12 @@
 				"entity.name.type.module",
 				"meta.type.annotation punctuation.accessor",
 				// [XML]
+				"entity.name.tag.namespace",
 				"entity.other.attribute-name.namespace",
 				"punctuation.separator.namespace.xml",
 			],
 			"settings": {
-				"foreground": "#a5a5a5",
+				"foreground": "#a2a2a7",
 				"fontStyle": "italic"
 			}
 		},
@@ -432,7 +458,7 @@
 				"punctuation.separator.table.markdown", // :---:
 			],
 			"settings": {
-				"foreground": "#a5a5a5",
+				"foreground": "#a2a2a7",
 			}
 		},
 
@@ -445,7 +471,7 @@
 				"constant.character.escape.continuation", // \
 			],
 			"settings": {
-				"foreground": "#767676",
+				"foreground": "#71717a",
 			}
 		},
 	]
