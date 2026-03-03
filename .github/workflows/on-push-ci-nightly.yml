@@ -34,7 +34,7 @@ jobs:
       uses: martinbeentjes/npm-get-version-action@main
 
     - name: Upload nightly build
-      uses: actions/upload-artifact@v6
+      uses: actions/upload-artifact@v7
       with:
         name: dark-minus-theme-${{ steps.get-version.outputs.current-version}}-nightly
         path: dark-minus-theme-${{ steps.get-version.outputs.current-version}}.vsix
