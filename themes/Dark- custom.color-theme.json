@@ -33,8 +33,8 @@
 		 * Customized editor
 		 */
 
-		"editor.background": "#181818", // Slightly darker editor
-		"editor.foreground": "#d4d4d4", // Slightly darker editor
+		"editor.background": "#181818", // (slightly darker editor, default is "#1e1e1e")
+		"editor.foreground": "#d4d4d4", // (default is "#d4d4d4")
 		"editor.lineHighlightBackground": "#1e1e1e",
 		"editor.lineHighlightBorder": "#0000",
 
