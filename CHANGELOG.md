@@ -1,3 +1,7 @@
+## 2.7.0
+
+- "Dark- custom" variant rewritten again
+
 ## 2.6.0
 
 - "Dark- custom" variant rewritten

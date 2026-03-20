@@ -3,7 +3,7 @@
 	"name": "Dark- custom",
 	"colors": {
 		/*
-		 * Clones "Dark (Visual Studio)" workbench style partially
+		 * Partially clones "Dark (Visual Studio)" workbench style
 		 * (https://github.com/microsoft/vscode/blob/main/extensions/theme-defaults/themes/dark_vs.json)
 		 */
 
@@ -30,7 +30,7 @@
 		"actionBar.toggledBackground": "#383a49",
 
 		/*
-		 * Customized editor
+		 * Customizes editor
 		 */
 
 		"editor.background": "#181818", // (slightly darker editor, default is "#1e1e1e")
@@ -45,16 +45,19 @@
 		"editorRuler.foreground": "#d4d4d420", // (default is "#5a5a5a")
 		"editorWhitespace.foreground": "#d4d4d440", // (default is "#e3e4e229")
 
+		// More visible ocurrences highlight
+		"editor.wordHighlightBackground": "#00a7cc60",
+
 		// More visible inlay hints
 		"editorInlayHint.background": "#07314e", // (50% statusBar.background)
-		"editorInlayHint.foreground": "#dedede", // (50% #bebebe + 50% #ffffff)
+		"editorInlayHint.foreground": "#d4d4d4", // (50% #bebebe + 50% #ffffff)
 
 		// More visible errors
 		"editorError.background": "#f14c4c60", // (60 opacity of default editorError.foreground: #f14c4c)
 		"editorWarning.background": "#cca70060", // (60 opacity of default editorWarning.foreground: #cca700)
 
 		/*
-		 * Customized workbench
+		 * Customizes workbench
 		 */
 
 		"titleBar.activeBackground": "#1e1e1e",
@@ -96,7 +99,7 @@
 		"statusBarItem.remoteBackground": "#16825d",
 
 		/*
-		 * Customized terminal
+		 * Customizes terminal
 		 */
 
 		// Clones "Ottosson"
@@ -123,6 +126,7 @@
 	},
 	"semanticHighlighting": false,
 	"tokenColors": [
+
 		/*
 		 * Typography ---------------------------------------------------------
 		 */
@@ -164,223 +168,121 @@
 			"name": "Keywords",
 			"scope": [
 				"keyword",
+				"constant.language",
+				"storage.type",
 				"storage.modifier",
-				"storage.type", // (e.g.: int, class, ...)
-				"support.type", // (e.g.: undefined, number, ...)
-				"variable.language", // (e.g.: this)
-				// [HTML]
-				"entity.name.tag.html",
-				"punctuation.definition.tag.begin.html",
-				"punctuation.definition.tag.end.html",
-				// [XML]
-				"entity.name.tag.localname.xml",
-				"punctuation.definition.tag.xml",
-			],
-			"settings": {
-				"foreground": "#7cbcde" // (darker version of default "entity.other.attribute-name": -#202020)
-			}
-		},
-		{
-			"name": "Not keywords",
-			"scope": [
-				"keyword.operator",
-				// [C][C++]
-				"entity.name.type.struct",
+				// (not not keywords)
+				"keyword.operator.alignas",
+				"keyword.operator.alignof",
+				"keyword.operator.cast",
+				"keyword.operator.expression",
+				"keyword.operator.instanceof",
+				"keyword.operator.new",
+				"keyword.operator.sizeof",
+				"keyword.operator.ternary",
+				"keyword.operator.typeid",
+				"keyword.operator.wordlike",
+				//
+				// Key-value-based languages
+				"source.json constant.language",
+				"source.yaml constant.language",
+				//
+				// Text-based languages
+				"text.html entity.name.tag",
+				"text.html.markdown punctuation.definition.quote",
+				"text.html.markdown meta.link.inline",
+				"text.xml entity.name.tag",
+				//
+				// [Assembly]
+				"source.z80asm meta.preprocessor.flag.z80asm",
+				// [CSS]
+				"source.css entity.name.tag",
+				"source.css support.constant",
+				"source.css support.function",
 				// [Java]
-				"storage.modifier.package.java", // (text after "package")
-				"storage.modifier.import.java", // (text after "import")
-				"storage.type.java", // (class names)
-				// [JSON]
-				"support.type.property-name.json",
-				// [YAML]
-				"entity.name.tag.yaml",
+				"source.java storage.type.primitive",
+				// [Makefile]
+				"source.makefile variable.language",
+				"source.makefile constant.other.placeholder",
+				// [Shell]
+				"source.shell support.function.builtin",
+				// [Typescript]
+				"source.ts support.type.builtin",
+				"source.ts support.type.primitive",
 			],
 			"settings": {
-				"foreground": "#d4d4d4" // (restores editor.foreground)
+				"foreground": "#569cd6", // ("keyword" from "Dark (Visual Studio)")
+				"fontStyle": ""
 			}
 		},
 		{
-			"name": "Not not keywords",
+			"name": "Special keywords",
 			"scope": [
-				"keyword.operator.expression.of", // (for..of)
-				"keyword.operator.expression.in", // (for..in)
-				"keyword.operator.new", // (new)
+				"variable.language",
 			],
 			"settings": {
-				"foreground": "#7cbcde" // (darker version of default "entity.other.attribute-name": -#202020)
-			}
-		},
-
-		/*
-		 * Constants ----------------------------------------------------------
-		 */
-		{
-			"name": "Constants",
-			"scope": [
-				"constant",
-				"support.constant",
-			],
-			"settings": {
-				"foreground": "#b5cea8", // (default "constant.numeric")
-			}
-		},
-		{
-			"name": "Constants (JSON)",
-			"scope": [
-				"constant.language.json", // (to tell apart from numbers and strings)
-			],
-			"settings": {
-				"foreground": "#7cbcde" // (same as keyword)
-			}
-		},
-		{
-			"name": "Visual noise around constants",
-			"scope": [
-				"keyword.other.unit", // (e.g.: 1rem, 1px)
-				"punctuation.definition.constant", // (e.g.: #rrggbb)
-			],
-			"settings": {
-				"foreground": "#95ae88", // (darker version of default "constant.numeric": -#202020)
-			}
-		},
-
-		/*
-		 * Strings ------------------------------------------------------------
-		 */
-		{
-			"name": "Srings and Regexps",
-			"scope": [
-				// Strings
-				"string",
-				// Regexps
-				"string.regexp constant", // (not a constant)
-				// [CSS]
-				"meta.function.url string punctuation",
-				// [HTML]
-				"meta.attribute.href string punctuation",
-				"meta.attribute.src string punctuation",
-				// [Markdown]
-				"markup.inline.raw.string",
-			],
-			"settings": {
-				"foreground": "#b5cea8", // (default "constant.numeric")
-			}
-		},
-		{
-			"name": "Strings (JSON and YAML)",
-			"scope": [
-				"string.quoted.double.json", // (to tell apart from constants and strings)
-				"string.quoted.double.yaml", // (to tell apart from constants and strings)
-				"string.quoted.single.yaml", // (to tell apart from constants and strings)
-				"string.unquoted.yaml", // (to tell apart from constants and strings)
-			],
-			"settings": {
-				"foreground": "#eeb198" // (lighter version of default "string": +#202020)
-			}
-		},
-		{
-			"name": "Strings and Regexps: non-printable characters",
-			"scope": [
-				// Strings
-				"string constant.character.escape", // (e.g.: \t)
-				"string constant.other.placeholder", // (e.g.: %s)
-				"string.template meta.template.expression", // (e.g.: `${text}`)
-				// Regexps
-				"string.regexp punctuation",
-				"string.regexp keyword", // (not a keyword)
-				"string.regexp keyword.operator", // (not a keyword.operator)
-				// [HTML]
-				"constant.character.entity.named.nbsp",
-				// [Markdown]
-				"punctuation.definition.markdown", // ```
-				"punctuation.definition.raw.markdown", // `
-			],
-			"settings": {
-				"foreground": "#ce9178" // (default "string")
-			}
-		},
-		{
-			"name": "Not strings, visible",
-			"scope": [
-				// [Markdown]
-				"string.other.link.title.markdown", // text in [text](link)
-			],
-			"settings": {
-				"foreground": "#d4d4d4" // (restores editor.foreground)
-			}
-		},
-		{
-			"name": "Not strings, non visible",
-			"scope": [
-				// [Markdown]
-				"string.other.link.description.markdown", // alt in ![alt](img)
-			],
-			"settings": {
-				"foreground": "#a2a2a7"
-			}
-		},
-		{
-			"name": "Visual noise around not strings",
-			"scope": [
-				// [Markdown]
-				"punctuation.definition.link.title", // [] in [text](link)
-				"punctuation.definition.link.description", // [] in ![alt](img)
-			],
-			"settings": {
-				"foreground": "#71717a",
-			}
-		},
-		{
-			"name": "Special strings (links)",
-			"scope": [
-				// [CSS]
-				"meta.function.url string",
-				// [HTML]
-				"meta.attribute.href string",
-				"meta.attribute.src string",
-				// [Markdown]
-				"markup.underline.link.markdown", // img in ![alt](img)
-				"markup.underline.link.image.markdown", // link in [text](link)
-			],
-			"settings": {
-				"foreground": "#569cd6" // (default "keyword")
-			}
-		},
-		{
-			"name": "Visual noise around special strings (links)",
-			"scope": [
-				"meta.image.inline.markdown", // () in ![alt](img)
-				"meta.link.inline.markdown", // () in [text](link)
-			],
-			"settings": {
-				"foreground": "#367cb6" // (darker version of default "keyword": -#202020)
-			}
-		},
-
-		/*
-		 * Comments -----------------------------------------------------------
-		 */
-		{
-			"name": "Comments",
-			"scope": [
-				"comment",
-				// [Batch]
-				"keyword.command.rem", // REM
-			],
-			"settings": {
-				"foreground": "#71717a",
+				"foreground": "#b5cea8", // ("constant.numeric" from "Dark (Visual Studio)"))
 				"fontStyle": "italic"
 			}
 		},
+
+		/*
+		 * Literals -----------------------------------------------------------
+		 */
 		{
-			"name": "Special comments",
+			"name": "Literals",
 			"scope": [
-				"keyword.other.documentation.javadoc", // Javadoc
-				"storage.type.class.jsdoc", // JSDoc
+				"constant",
+				"string",
+				//
+				// Text-based languages
+				"text.html meta.attribute.id string",
+				"text.html constant.character.entity.named",
+				//
+				// [Batchfile]
+				"source.batchfile variable",
+				// [CSS]
+				"source.css entity.other.attribute-name.class",
+				"source.css entity.other.attribute-name.class punctuation",
+				// [Makefile]
+				"source.makefile variable",
 			],
 			"settings": {
-				"foreground": "#71717a",
-				"fontStyle": "italic bold"
+				"foreground": "#b5cea8", // ("constant.numeric" from "Dark (Visual Studio)"))
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Dimmed literals, dimmed content within literals",
+			"scope": [
+				"keyword.other.unit",
+				//
+				// [C]
+				"source.c string constant.character.escape.c",
+				"source.c string constant.other.placeholder.c",
+				// [C++]
+				"source.cpp string constant.character.escape.cpp",
+				// [Javascript]
+				"source.js string.template punctuation.definition.template-expression",
+				"source.js string.template meta.template.expression",
+				"source.js string.regexp keyword.control",
+				"source.js string.regexp keyword.operator",
+				"source.js string.regexp punctuation.definition.character-class",
+				"source.js string.regexp punctuation.definition.group",
+				// [Makefile]
+				"source.makefile string.interpolated.makefile",
+				"source.makefile string.interpolated.makefile variable",
+				// [Typescript]
+				"source.ts string.template punctuation.definition.template-expression",
+				"source.ts string.template meta.template.expression",
+				"source.ts string.regexp keyword.control",
+				"source.ts string.regexp keyword.operator",
+				"source.ts string.regexp punctuation.definition.character-class",
+				"source.ts string.regexp punctuation.definition.group",
+			],
+			"settings": {
+				"foreground": "#ce9178", // ("string" from "Dark (Visual Studio)"))
+				"fontStyle": ""
 			}
 		},
 
@@ -388,90 +290,199 @@
 		 * Highlights ---------------------------------------------------------
 		 */
 		{
-			"name": "Highlights",
+			"name": "Highlights (Headings)",
 			"scope": [
-				// [Markdown]
-				"entity.name.section.markdown", // # text, ## text, ### text
-				"punctuation.definition.heading.markdown", // #, ##, ###
+				//
+				// Text-based languages
+				"text.html.markdown heading",
+				"text.html.markdown punctuation.definition.heading.markdown",
+				//
+				// [Assembly]
+				"source.z80asm entity.name.function.z80asm",
+				// [Batch]
+				"source.batchfile keyword.operator.conditional",
+				// [Makefile]
+				"source.makefile entity.name.function.target.makefile",
+				// [Shell]
+				"source.shell punctuation.separator.statement.and",
+				"source.shell punctuation.separator.statement.or"
 			],
 			"settings": {
-				"foreground": "#fcfcff"
+				"foreground": "#f4f4f4",
+				"fontStyle": ""
 			}
 		},
 
 		/*
-		 * Annotations --------------------------------------------------------
+		 * Dimmed -------------------------------------------------------------
 		 */
 		{
-			"name": "Annotations, scope resolution, etc.",
+			"name": "Dimmed and italic (annotations, directives, generics)",
 			"scope": [
-				"meta.declaration.annotation",
-				"meta.declaration.annotation constant.other.key", // (not a constant)
-				"meta.declaration.annotation keyword.operator.assignment", // (not a keyword)
-				"meta.declaration.annotation storage.type", // (not an storage.type)
-				// [C]
-				"entity.name.scope-resolution", // text::
-				"punctuation.separator.namespace.access.cpp", // ::
-				"support.other.attribute.cpp", // [[text]]
+				//
+				// [Assembly]
+				"source.z80asm keyword.control",
+				// [C++]
+				"source.cpp entity.name.scope-resolution",
+				"source.cpp meta.template storage.type.template",
+				"source.cpp meta.template entity.name.type.template",
+				"source.cpp punctuation.section.angle-brackets.begin.template.definition.cpp",
+				"source.cpp punctuation.section.angle-brackets.end.template.definition.cpp",
 				// [Java]
-				"punctuation.bracket.angle.java",
-				"storage.type.generic",
-				"meta.definition.variable.java storage.modifier.extends.java",
-				"meta.definition.variable.java storage.modifier.super.java",
-				// [Markdown]
-				"fenced_code.block.language",
-				// [TypeScript]
-				"entity.name.type.module",
-				"meta.type.annotation punctuation.accessor",
-				// [XML]
-				"entity.name.tag.namespace",
-				"entity.other.attribute-name.namespace",
-				"punctuation.separator.namespace.xml",
+				"source.java meta.declaration.annotation",
+				"source.java meta.declaration.annotation constant.other.key.java",
+				"source.java punctuation.bracket.angle.java",
+				"source.java storage.type.annotation",
+				"source.java storage.type.generic",
+				// [Typescript]
+				"source.ts entity.name.type.module",
+				"source.ts meta.type.parameters",
 			],
 			"settings": {
-				"foreground": "#a2a2a7",
+				"foreground": "#b4b4b4", // (halfway between editor.foreground and comment)
 				"fontStyle": "italic"
 			}
 		},
 		{
-			"name": "Visual noise, dimmed",
+			"name": "Dimmed (visual noise)",
 			"scope": [
-				// [Batch]
-				"keyword.operator.at.batchfile", // @
-				// [C][c++]
-				"punctuation.separator.pointer-access", // ->
-				"punctuation.separator.scope-resolution", // ::
-				"storage.modifier.reference.cpp", // &
+				"punctuation.terminator.statement", // ;
+				//
+				// Text-based languages
+				"text.html string",
+				"text.html.markdown entity.name.tag",
+				"text.html.markdown fenced_code.block.language",
+				"text.html.markdown meta.image.inline",
+				"text.xml string",
+				//
+				// [C]
+				"source.c punctuation.separator.pointer-access", // ->
+				"source.c punctuation.separator.scope-resolution", // ::
+				// [C++]
+				"source.cpp punctuation.separator.pointer-access", // ->
+				"source.cpp punctuation.separator.scope-resolution", // ::
+				"source.cpp storage.modifier.pointer.cpp", // *
+				"source.cpp storage.modifier.reference.cpp", // &
 				// [Java]
-				"punctuation.definition.parameters.varargs.java", // ...
-				// [JavaScript][TypeScript]
-				"keyword.operator.spread", // ?.
-				"keyword.operator.optional", // ?:
-				"punctuation.accessor.optional", // ?.
-				// [Markdown]
-				"meta.separator.markdown", // ---
-				"punctuation.definition.bold.markdown", // **text**
-				"punctuation.definition.italic.markdown", // _text_
-				"markup.list.unnumbered.markdown punctuation.definition.list.begin", // *, -
-				"punctuation.definition.quote", // >
-				"punctuation.definition.table.markdown", // |
-				"punctuation.separator.table.markdown", // :---:
+				"source.java punctuation.terminator.java",
+				// [Typescript]
+				"source.ts keyword.operator.optional.ts", // ?:
+				"source.ts keyword.operator.spread.ts", // ...
 			],
 			"settings": {
-				"foreground": "#a2a2a7",
+				"foreground": "#b4b4b4", // (halfway between editor.foreground and comment)
+				"fontStyle": ""
 			}
 		},
 
 		/*
-		 * Visual noise -------------------------------------------------------
+		 * Fainted ------------------------------------------------------------
 		 */
 		{
-			"name": "Visual noise, fainted",
+			"name": "Fainted and italic (comments)",
 			"scope": [
-				"constant.character.escape.continuation", // \
+				"comment",
+				//
+				// [Batch]
+				"source.batchfile keyword.command.rem",
 			],
 			"settings": {
-				"foreground": "#71717a",
+				"foreground": "#797981",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Fainted, italic and bold (special comments)",
+			"scope": [
+				//
+				// [Java]
+				"source.java keyword.other.documentation.javadoc",
+				// [Typescript]
+				"source.ts storage.type.class.jsdoc",
+			],
+			"settings": {
+				"foreground": "#797981",
+				"fontStyle": "italic bold"
+			}
+		},
+		{
+			"name": "Fainted (visual noise)",
+			"scope": [
+				"punctuation.definition.string",
+				//
+				// Key-value-based languages
+				"source.json punctuation",
+				"source.yaml punctuation",
+				"source.yaml keyword", // |
+				//
+				// Text-based languages
+				"text.html constant.character.entity.named.nbsp",
+				"text.html meta.tag",
+				"text.html meta.tag.inline.br entity.name.tag",
+				"text.html punctuation",
+				"text.html.markdown string.other.link.description",
+				"text.xml meta.tag",
+				"text.xml punctuation",
+				//
+				// [Batch]
+				"source.batchfile constant.character.escape", // ^
+				"source.batchfile keyword.operator.at", // @
+				// [C]
+				"source.c constant.character.escape.line-continuation.c", // \
+				// [CSS]
+				"source.css punctuation",
+				// [Javascript]
+				"source.js meta.objectliteral.js punctuation.separator.comma.js", // ,
+				"source.js meta.objectliteral.js punctuation.separator.key-value.js", // :
+				// [Makefile]
+				"source.makefile constant.character.escape.continuation.makefile", // \
+			],
+			"settings": {
+				"foreground": "#797981",
+				"fontStyle": ""
+			}
+		},
+
+		/*
+		 * Restores editor.foreground -----------------------------------------
+		 */
+		{
+			"name": "Not keywords",
+			"scope": [
+				// Not keywords -----------------------------------------------
+				"keyword.operator",
+				//
+				// [CSS]
+				"source.css keyword",
+				// [Java]
+				"source.java storage.modifier.package.java",
+				"source.java storage.modifier.import.java",
+				"source.java storage.type",
+				//
+				// Not literals -----------------------------------------------
+				//
+				// Key-value-based languages
+				"source.json support.type.property-name.json",
+				"source.yaml entity.name.tag.yaml",
+				"source.js meta.object-literal.key.js string", // (JSON within JS)
+				//
+				// Text-based languages
+				"text.html.markdown string.other.link.title",
+				"text.html.markdown punctuation.definition.list",
+				//
+				// Not fainted ------------------------------------------------
+				//
+				// Key-value-based languages
+				"source.json punctuation.definition.array",
+				"source.yaml punctuation.definition.block.sequence",
+				//
+				// [CSS]
+				"source.css punctuation.definition.keyword",
+				"source.css punctuation.definition.entity",
+			],
+			"settings": {
+				"foreground": "#d4d4d4", // (restores editor.foreground)
+				"fontStyle": ""
 			}
 		},
 	]
