@@ -33,7 +33,7 @@
 		 * Customizes editor
 		 */
 
-		"editor.background": "#181818", // (slightly darker editor, default is "#1e1e1e")
+		"editor.background": "#121212", // (slightly darker editor, default is "#1e1e1e")
 		"editor.foreground": "#d4d4d4", // (default is "#d4d4d4")
 		"editor.lineHighlightBackground": "#1e1e1e",
 		"editor.lineHighlightBorder": "#0000",
@@ -68,14 +68,15 @@
 		"editorGroupHeader.tabsBackground": "#1e1e1e",
 		"editorGroupHeader.noTabsBackground": "#1e1e1e",
 		"editorWidget.background": "#252526", // (same as menu.background)
+		"listFilterWidget.background": "#252526",
 		"tab.inactiveBackground": "#1e1e1e",
-		"tab.activeBackground": "#181818",
+		"tab.activeBackground": "#121212",
 		"tab.unfocusedActiveBorderTop": "#454545",
 		"tab.border": "#0000",
 		"tab.lastPinnedBorder": "#454545",
+		"terminal.border": "#0000",
 		"panel.background": "#1e1e1e",
-		// "listFilterWidget.background": "#252526", // ???
-		// "quickInput.background": "#252526", // ???
+		"quickInput.background": "#252526",
 
 		// Few borders to improve readability:
 		"editorGroup.border": "#454545",
