@@ -1,3 +1,7 @@
+## 2.8.0
+
+- "Dark- custom" variant removed and published as a separate extension ([Works for Me](https://marketplace.visualstudio.com/items?itemName=theNestruo.worksforme-theme))
+
 ## 2.7.0
 
 - "Dark- custom" variant rewritten again

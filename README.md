@@ -36,10 +36,6 @@ The _Dark--_ syntax theme highlights just comments.
 
 This syntax theme is available in the **Dark-- (Visual Studio)** workbench theme variation only.
 
-### Dark- custom
-
-Custom version with my personal preferences to improve readability and visualize structure more clearly.
-
 
 ## Screenshots
 
